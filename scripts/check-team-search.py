@@ -1,0 +1,2 @@
+import json,psycopg2
+cfg=json.load(open(r'D:\FC CLUBS\BACKUP-2026-10-01\private\database-connection.json',encoding='utf-8-sig'));cfg['dbname']=cfg.pop('database');c=psycopg2.connect(**cfg);q=c.cursor();q.execute("select id,doc->>'name',doc->>'country_id',doc->>'country',doc->>'is_active',doc->>'game_id' from fc_runtime_records where collection='teams' and (doc->>'name' ilike '%DTR%' or doc->>'name' ilike '%Vortex%')");print(q.fetchall());q.execute("select id,doc from fc_runtime_records where collection='countries' and doc->>'iso2'='BR'");print(q.fetchall());c.close()

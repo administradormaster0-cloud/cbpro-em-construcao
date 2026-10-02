@@ -1,0 +1,12 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+process.loadEnvFile('.env.supabase.local');
+const form=new FormData();
+form.append('metadata',JSON.stringify({entrypoint_path:'index.ts',name:'search-ea-clubs',verify_jwt:false}));
+form.append('file',new Blob([readFileSync('supabase/functions/search-ea-clubs/index.ts')],{type:'application/typescript'}),'index.ts');
+form.append('file',new Blob([readFileSync('server/ea-clubs.mjs')],{type:'application/javascript'}),'ea-clubs.mjs');
+form.append('file',new Blob([readFileSync('cloud/ea-cloud.mjs')],{type:'application/javascript'}),'ea-cloud.mjs');
+const r=await fetch(`https://api.supabase.com/v1/projects/${process.env.SUPABASE_PROJECT_REF}/functions/deploy?slug=search-ea-clubs`,{method:'POST',headers:{Authorization:'Bearer '+process.env.SUPABASE_ACCESS_TOKEN},body:form,signal:AbortSignal.timeout(90000)});
+const result=await r.json();if(!r.ok)throw Error('Deploy HTTP '+r.status+': '+JSON.stringify(result));
+writeFileSync('data/ea-function-deployment.json',JSON.stringify(result,null,2));console.log({slug:result.slug,status:result.status,version:result.version});
+const response=await fetch(process.env.SUPABASE_URL+'/functions/v1/search-ea-clubs',{method:'POST',headers:{apikey:process.env.SUPABASE_ANON_KEY,'Content-Type':'application/json'},body:JSON.stringify({name:'Arsenal'}),signal:AbortSignal.timeout(45000)});
+const data=await response.json();console.log({http:response.status,...data});

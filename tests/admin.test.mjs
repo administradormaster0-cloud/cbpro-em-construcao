@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+process.env.FC_DATA_DIR=mkdtempSync(join(tmpdir(),'fcclubs-admin-test-'));
+const {save,get,where,all,db}=await import('../server/db.mjs');
+const {transferOwnership,reviewOrganization,updateAchievementIcon,adminUsers}=await import('../server/admin.mjs');
+const admin={id:'admin',role:'admin'},owner={id:'owner',role:'member'};
+test('ownership transfer enforces owner authorization and records previous owner',()=>{save('users_profile',{id:'new-owner'});save('teams',{id:'club',owner_user_id:'owner'});assert.throws(()=>transferOwnership({id:'stranger',role:'member'},'club','new-owner'),/proprietário/);assert.equal(get('teams','club').owner_user_id,'owner');transferOwnership(owner,'club','new-owner');assert.equal(get('teams','club').owner_user_id,'new-owner');assert.equal(where('team_change_logs','team_id','club')[0].old_value,'owner');});
+test('organization review creates federation and membership atomically',()=>{save('organization_requests',{id:'request',user_id:'applicant',organization_name:'Liga local',status:'PENDING'});assert.throws(()=>reviewOrganization(owner,{p_request_id:'request',p_action:'CREATE'}),/administrativo/);const before=all('federations').length;assert.throws(()=>reviewOrganization(admin,{p_request_id:'request',p_action:'CREATE',p_role:'ROOT'}),/Função/);assert.equal(all('federations').length,before);assert.equal(get('organization_requests','request').status,'PENDING');const result=reviewOrganization(admin,{p_request_id:'request',p_action:'CREATE'});assert.equal(get('federations',result.federation_id).name,'Liga local');assert.equal(where('user_federations','federation_id',result.federation_id)[0].user_id,'applicant');assert.throws(()=>reviewOrganization(admin,{p_request_id:'request',p_action:'REJECT'}),/já analisada/);});
+test('achievement icon update preserves scoring rules',()=>{save('performance_achievement_types',{id:'goal',points:20});assert.throws(()=>updateAchievementIcon(owner,{p_achievement_type_id:'goal',p_icon_object_key:null}),/administrativo/);updateAchievementIcon(admin,{p_achievement_type_id:'goal',p_icon_object_key:'performance-achievements/goal/icon.png'});assert.equal(get('performance_achievement_types','goal').points,20);assert.throws(()=>updateAchievementIcon(admin,{p_achievement_type_id:'goal',p_icon_object_key:'../../secret'}),/inválido/);});
+test('admin user roles preserve the last administrator and synchronize account access',()=>{
+ save('users_profile',{id:'admin',display_name:'Local admin'});
+ save('roles',{id:'super',key:'SUPERADMIN'});save('user_roles',{user_id:'admin',role_id:'super'});
+ db.prepare('INSERT INTO accounts(id,email,password,role) VALUES(?,?,?,?)').run('admin','admin@test.local','unused','admin');
+ const query=new URLSearchParams();
+ assert.throws(()=>adminUsers(owner,[],'GET',{},query),/administrativo/);
+ assert.throws(()=>adminUsers(admin,['admin','roles'],'POST',{remove:['SUPERADMIN']},query),/último administrador/);
+ assert.equal(where('user_roles','user_id','admin').length,1);
+ save('users_profile',{id:'second',display_name:'Second admin'});
+ db.prepare('INSERT INTO accounts(id,email,password,role) VALUES(?,?,?,?)').run('second','second@test.local','unused','member');
+ adminUsers(admin,['second','roles'],'POST',{add:['ADMIN']},query);
+ assert.equal(db.prepare('SELECT role FROM accounts WHERE id=?').get('second').role,'admin');
+ adminUsers(admin,['admin','roles'],'POST',{remove:['SUPERADMIN']},query);
+ assert.equal(db.prepare('SELECT role FROM accounts WHERE id=?').get('admin').role,'member');
+});
+test('admin federation membership validates and supports removal',()=>{
+ const q=new URLSearchParams();save('federations',{id:'fed',name:'Liga'});
+ assert.throws(()=>adminUsers(admin,['second','federations'],'POST',{federation_id:'fed',role:'ROOT'},q),/Função inválida/);
+ adminUsers(admin,['second','federations'],'POST',{federation_id:'fed',role:'STAFF'},q);
+ assert.equal(adminUsers(admin,['second'],'GET',{},q).federations[0].name,'Liga');
+ adminUsers(admin,['second','federations','fed'],'DELETE',{},q);
+ assert.equal(where('user_federations','user_id','second').length,0);
+});
+test.after(()=>db.close());

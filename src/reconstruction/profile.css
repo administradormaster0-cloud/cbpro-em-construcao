@@ -1,0 +1,21 @@
+.cbpro-profile{background:#f5f8fc;color:#081834;min-height:100vh;padding:28px 0;font-family:Barlow,sans-serif}
+.cbpro-profile-record{max-width:1400px;margin:auto;padding:0 32px}
+.cbpro-profile-record>div{max-width:none;padding-left:0;padding-right:0}
+.cbpro-profile-identity{background:#081834;color:#edf4ff;padding:32px max(24px,calc((100vw - 1340px)/2));border-bottom:4px solid #22d875}
+.cbpro-profile-identity>div{max-width:none;padding:0}
+.cbpro-profile-identity h1,.cbpro-profile-identity p,.cbpro-profile-identity .text-foreground{color:inherit}
+#root .cbpro-profile h1,#root .cbpro-profile h2,#root .cbpro-profile h3{font-family:Phudu,sans-serif;letter-spacing:-.02em}
+.cbpro-profile [role=tablist]{display:flex;justify-content:flex-start;gap:18px;border-radius:0;background:transparent;border-bottom:1px solid #b8cce1;padding:0;height:auto;overflow:auto}
+.cbpro-profile [role=tab]{padding:18px 8px;font-size:15px;border-radius:0;box-shadow:none;white-space:nowrap}
+.cbpro-profile [role=tab][data-state=active]{color:#1749bc;background:transparent;border-bottom:3px solid #17bf69}
+.cbpro-profile img{object-fit:contain}
+.cbpro-profile-periods{margin:28px 0;border-bottom:1px solid #9bb4d0}
+.cbpro-profile-periods [role=tablist]{scrollbar-width:thin;scrollbar-color:#4d719b transparent}
+.cbpro-profile-periods [role=tab]{border:0;border-bottom:3px solid transparent;background:none;color:inherit;font:600 15px Barlow,sans-serif;min-height:52px}
+.cbpro-profile-periods [role=tab][aria-selected=true]{border-bottom-color:#18bc68;color:#1749bc}
+.cbpro-profile-periods button:focus-visible,.cbpro-profile [role=tabpanel]:focus-visible{outline:3px solid #18bc68;outline-offset:3px}
+.cbpro-profile [class*=blur-]{filter:none}
+.cbpro-profile [class*=backdrop-blur]{backdrop-filter:none}
+.cbpro-profile .free-player__body{padding-top:0}
+html[data-cbpro-theme=dark] .cbpro-profile{background:#101f35;color:#edf4ff}
+@media(max-width:760px){.cbpro-profile-record{padding:0 16px}.cbpro-profile-identity{padding:24px 16px}.cbpro-profile [role=tab]{font-size:14px;padding:14px 6px}}

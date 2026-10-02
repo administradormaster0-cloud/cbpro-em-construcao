@@ -1,0 +1,10 @@
+const fs=require('fs');fs.copyFileSync('server/organization-access.mjs','supabase/functions/fc-api/organization-access.mjs');
+for(const p of ['server/rest.mjs','supabase/functions/fc-api/rest.mjs']){let s=fs.readFileSync(p,'utf8');
+ if(!s.includes("from './organization-access.mjs'"))s="import {managesOrganization,staffInviteVisible,scopeStaffInvites,validateStaffInvite} from './organization-access.mjs';\n"+s;
+ s=s.replace("if(participantCanWrite(user,table,row))return true;","if(table==='org_staff_invites')return managesOrganization(user,row.federation_id);\n if(participantCanWrite(user,table,row))return true;");
+ s=s.replace("query.set(table==='users_profile'?'id':'user_id'","if(table==='org_staff_invites')scopeStaffInvites(query,user);else query.set(table==='users_profile'?'id':'user_id'");
+ s=s.replace("return row.user_id===user.id||row.user_id===user.profile_id;","if(table==='org_staff_invites')return staffInviteVisible(row,user);return row.user_id===user.id||row.user_id===user.profile_id;");
+ s=s.replace("if(!old)validateRegistrationInsert(table,input,user);","if(table==='org_staff_invites')validateStaffInvite('POST',input,old,user);\n    if(!old)validateRegistrationInsert(table,input,user);");
+ s=s.replace("rows=current.map(r=>{if(method==='DELETE')","if(table==='org_staff_invites'&&method==='PATCH')for(const r of current)validateStaffInvite('PATCH',body,r,user);\n   rows=current.map(r=>{if(method==='DELETE')");
+ s=s.replace("const defaults={","const defaults={org_staff_invites:{status:'PENDING'},");fs.writeFileSync(p,s);
+}console.log('Organization invite access staged in local and cloud REST handlers.');

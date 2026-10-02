@@ -1,0 +1,11 @@
+const fs=require('fs');const source=fs.readFileSync('server/avatar-access.mjs','utf8');fs.writeFileSync('supabase/functions/fc-api/avatar-access.mjs',source.replace('import {get,where','import {clock,get,where').replaceAll('Date.now()','clock()'));
+for(const p of ['server/rest.mjs','supabase/functions/fc-api/rest.mjs']){let s=fs.readFileSync(p,'utf8');if(s.includes("from './avatar-access.mjs'"))continue;
+ s="import {avatarOfferVisible,scopeAvatarOffers,canWriteAvatar,avatarWriteDefaults,validateAvatarWrite} from './avatar-access.mjs';\n"+s;
+ s=s.replace("privateTables=new Set([","privateTables=new Set(['avatar_offers',");
+ s=s.replace("if(table==='org_staff_invites')return managesOrganization","if(['avatar_listings','avatar_offers'].includes(table))return canWriteAvatar(user,table,row);\n if(table==='org_staff_invites')return managesOrganization");
+ s=s.replace("if(table==='org_staff_invites')scopeStaffInvites(query,user);else","if(table==='avatar_offers')scopeAvatarOffers(query,user);else if(table==='org_staff_invites')scopeStaffInvites(query,user);else");
+ s=s.replace("if(table==='org_staff_invites')return staffInviteVisible","if(table==='avatar_offers')return avatarOfferVisible(row,user);if(table==='org_staff_invites')return staffInviteVisible");
+ s=s.replace("for(const input of Array.isArray(body)?body:[body]){","for(const raw of Array.isArray(body)?body:[body]){const input=avatarWriteDefaults(table,raw);");
+ s=s.replace("if(table==='org_staff_invites')validateStaffInvite('POST',input,old,user);","validateAvatarWrite(table,'POST',input,old,user);\n    if(table==='org_staff_invites')validateStaffInvite('POST',input,old,user);");
+ s=s.replace("rows=current.map(r=>{if(method==='DELETE')","for(const r of current)validateAvatarWrite(table,method,body,r,user);\n   rows=current.map(r=>{if(method==='DELETE')");fs.writeFileSync(p,s);
+}console.log('Avatar listings and private offer access staged.');

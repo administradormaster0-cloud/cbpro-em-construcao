@@ -1,0 +1,2 @@
+import json,psycopg2
+cfg=json.load(open(r'D:\FC CLUBS\BACKUP-2026-10-01\private\database-connection.json',encoding='utf-8-sig'));cfg['dbname']=cfg.pop('database');c=psycopg2.connect(**cfg);q=c.cursor();q.execute("select x->>'name',x->'args'->>'p_collection',octet_length((x->'result')::text) from cbpro_public_snapshot,jsonb_array_elements(payload) x order by 3 desc limit 8");print(q.fetchall());q.execute("select jobid,status,return_message from cron.job_run_details order by runid desc limit 4");print(q.fetchall());c.close()

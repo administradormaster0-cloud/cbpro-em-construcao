@@ -1,0 +1,165 @@
+/* Legibility, unclipped emblems, compact champions and an optional dark theme. */
+:root{--cb-surface:#fff;--cb-page:#f3f6fa;--cb-ink:#142e50;--cb-subtle:#566c86;--cb-line:#d7e2ef;--cb-soft:#eaf0f7;--sidebar-background:0 0% 100%;--sidebar-foreground:218 61% 17%;--sidebar-accent:215 40% 94%;--sidebar-accent-foreground:216 83% 35%;--sidebar-border:215 27% 86%}
+#cbpro-theme{width:40px;height:40px;flex-shrink:0;border:1px solid var(--cb-line);border-radius:50%;background:var(--cb-surface);color:var(--cb-ink);font:25px Barlow;cursor:pointer}
+.cbpro-home .home-section--friendlies{display:none!important}
+#root .cbpro-top-teams .grid>div{transform:none!important;align-self:stretch;border:1px solid var(--cb-line);border-radius:16px;background:var(--cb-surface);overflow:hidden;box-shadow:none}
+#root .cbpro-top-teams .grid>div>div:first-child{background:var(--cb-soft)!important;color:var(--cb-ink)!important;padding:12px 20px;border-bottom:1px solid var(--cb-line)}
+#root .cbpro-top-teams img{width:80px!important;height:80px!important;max-width:80px;max-height:80px;object-fit:contain!important;object-position:center;background:#eef2f7;border:1px solid var(--cb-line);padding:10px;border-radius:14px}
+#root .cbpro-top-teams .grid>div:nth-child(2){border:2px solid #187847}
+#root .cbpro-top-teams .text-sm{font-size:15px}
+#root .home-section--recruitment{padding-top:44px;padding-bottom:44px;background:var(--cb-page)!important}
+#root .home-section--recruitment h3{font:700 34px/1.15 'Barlow Condensed';letter-spacing:0;text-transform:none;margin-bottom:10px}
+#root .home-section--recruitment section>.flex{margin-bottom:22px}
+#root .home-section--recruitment .grid{gap:18px}
+#root .home-section--recruitment .grid>button{padding:22px;border:1px solid var(--cb-line);border-radius:16px;background:var(--cb-surface);min-height:265px;box-shadow:0 4px 14px #0e305507;transform:none!important}
+#root .home-section--recruitment .grid>button>div:nth-child(2){margin:16px 0;gap:12px}
+#root .home-section--recruitment .grid>button>div:nth-child(2)>div:first-child{width:56px;height:56px;border-radius:12px;background:var(--cb-soft)}
+#root .home-section--recruitment .grid>button>div:nth-child(2) p{font:600 17px Barlow;overflow:hidden;text-overflow:ellipsis}
+#root .home-section--recruitment .grid>button>div:first-child span{font:600 13px Barlow;letter-spacing:.02em}
+#root .home-section--recruitment .grid>button>div:nth-child(3) span{font-size:12px;opacity:1;color:var(--cb-subtle)}
+#root .home-section--recruitment .grid>button>div:nth-child(3) span:last-child{display:none}
+#root .home-section--recruitment .grid>button>.grid{gap:6px;margin-top:18px;padding-top:16px;border-top:1px solid var(--cb-line)}
+#root .home-section--recruitment .grid>button>.grid p:first-child{font:700 23px/1.2 'Barlow Condensed';color:var(--cb-ink)}
+#root .home-section--recruitment .grid>button>.grid p:last-child{font:400 12px Barlow;margin-top:5px;color:var(--cb-subtle)}
+#root .home-section--recruitment .grid>button>div:last-child span{font-size:12px;color:var(--cb-subtle)}
+#root .home-section--recruitment .grid>button>div:last-child span:empty{display:none}
+#root .home-section--recruitment .grid>button>div:first-child .text-rose-400{color:#c83255}
+#root .home-section--recruitment .grid>button>div:first-child .text-amber-400{color:#987000}
+#root .home-section--recruitment .grid>button>div:first-child .text-sky-400{color:#186fb1}
+#root .home-section--recruitment .grid>button>div:first-child .text-emerald-400{color:#17794a}
+#root .home-section--champions{background:var(--cb-page);padding-top:46px;padding-bottom:46px}
+#root .home-section--champions h3{font:700 38px/1.1 'Barlow Condensed';letter-spacing:0;text-transform:none}
+#root .home-section--champions .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+#root .home-section--champions .grid>div{height:100%}
+#root .home-section--champions .grid>div>div{height:100%;background:var(--cb-surface);border:1px solid var(--cb-line)!important;border-radius:16px;box-shadow:0 5px 18px #0f33500a}
+#root .home-section--champions .grid>div>div>a:first-child>div{aspect-ratio:auto;height:210px;padding:24px;background:linear-gradient(135deg,var(--cb-soft),var(--cb-surface))!important}
+#root .home-section--champions .grid img[alt="Troféu"]{height:165px;max-width:190px;width:auto;object-fit:contain;filter:drop-shadow(0 10px 8px #193f5724)}
+#root .home-section--champions .grid>div>div>div{padding:15px 18px}
+#root .home-section--champions .grid>div>div>div.border-t{background:var(--cb-surface)!important;border-color:var(--cb-line)!important}
+#root .home-section--champions .grid>div>div>div.border-t img{width:32px;height:32px;object-fit:contain!important;background:var(--cb-soft);padding:3px}
+#root .home-section--champions .grid>div>div>div.border-t span{font:600 17px Barlow;color:var(--cb-ink)!important;text-transform:none;letter-spacing:0}
+#root .home-section--champions .grid>div>div>div:last-child p{font:600 18px/1.3 'Barlow Condensed';white-space:normal}
+#root .home-section--champions .grid>div>div>div:last-child span{font-size:12px;line-height:1.5}
+#root .home-section--champions .grid>div>div>div:last-child .inline-flex{height:auto;min-height:20px;font:500 11px Barlow;padding:3px 6px}
+#root .home-section--champions .grid>div>div>div:last-child button{min-height:34px;font-size:12px;margin-top:8px}
+/* Dashboard retains its original actions and permissions. */
+.cbpro-dashboard #root main>header{top:88px;background:var(--cb-surface);border-color:var(--cb-line)}
+.cbpro-dashboard #root [data-sidebar=sidebar]{background:var(--cb-surface);border-color:var(--cb-line)}
+.cbpro-dashboard #root [data-sidebar=menu-button]{color:var(--cb-ink);margin-left:8px;width:calc(100% - 16px);min-height:40px;font:500 14px Barlow}
+.cbpro-dashboard #root [data-sidebar=menu-button][data-active=true]{color:#1c6aab;background:var(--cb-soft);font-weight:600}
+.cbpro-dashboard #root [data-sidebar=group-label]{color:var(--cb-subtle)}
+.cbpro-dashboard .cbpro-dashboard-surface{background:var(--cb-page);min-height:70vh;padding-top:34px}
+.cbpro-dashboard .cbpro-dashboard-surface>.absolute{display:none!important}
+#cbpro-dashboard-welcome{margin:0 0 28px;padding:0 4px}
+#cbpro-dashboard-welcome p{font:600 14px Barlow;color:#147647;margin-bottom:10px}
+#cbpro-dashboard-welcome h2{font:700 42px/1.05 'Barlow Condensed';margin:0 0 12px;color:var(--cb-ink)}
+#cbpro-dashboard-welcome span{font:400 16px/1.6 Barlow;color:var(--cb-subtle)}
+#root .cbpro-quick-actions{padding:26px;background:var(--cb-surface);border:1px solid var(--cb-line);border-radius:18px;box-shadow:none;backdrop-filter:none}
+#root .cbpro-quick-actions h1{font:600 25px 'Barlow Condensed'}
+#root .cbpro-quick-actions .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px}
+#root .cbpro-quick-actions .grid>*{clip-path:none!important;box-shadow:none;backdrop-filter:none;border-radius:12px}
+#root .cbpro-quick-actions .grid>div:first-child{grid-column:1/-1;background:#0b3265;border:0}
+#root .cbpro-quick-actions .grid>div:first-child button{border:0;border-radius:12px;background:#0b3265;color:white;min-height:68px;font:600 16px Barlow;letter-spacing:0;white-space:normal;padding:18px 22px;height:auto;box-shadow:none}
+#root .cbpro-quick-actions .grid>button{min-height:98px;border:1px solid var(--cb-line);background:var(--cb-surface);padding:20px 16px;gap:12px;transition:background .15s;overflow:visible}
+#root .cbpro-quick-actions .grid>button:hover{background:var(--cb-soft)}
+#root .cbpro-quick-actions .grid>button span{font:600 15px/1.4 Barlow;letter-spacing:0;white-space:normal;overflow:visible;text-transform:none;color:var(--cb-ink)}
+#root .cbpro-quick-actions .grid>button svg{flex-shrink:0}
+html[data-cbpro-theme=dark]{color-scheme:dark;--cb-page:#0e1727;--cb-surface:#162338;--cb-soft:#20324b;--cb-ink:#e5edf8;--cb-subtle:#a5b8d0;--cb-line:#30445f;--background:217 47% 10%;--foreground:216 58% 94%;--card:217 44% 15%;--card-foreground:216 58% 94%;--popover:217 44% 15%;--popover-foreground:216 58% 94%;--primary:211 87% 70%;--primary-foreground:218 60% 14%;--secondary:215 38% 21%;--secondary-foreground:216 58% 94%;--muted:215 35% 20%;--muted-foreground:214 32% 73%;--accent:146 52% 48%;--accent-foreground:216 58% 94%;--border:215 33% 28%;--input:215 33% 28%;--ring:211 87% 70%;--sidebar-background:217 44% 15%;--sidebar-foreground:216 58% 94%;--sidebar-accent:215 38% 21%;--sidebar-accent-foreground:211 87% 70%;--sidebar-border:215 33% 28%}
+html[data-cbpro-theme=dark] body{background:var(--cb-page);color:var(--cb-ink)}
+html[data-cbpro-theme=dark] #root{color:var(--cb-ink)}
+html[data-cbpro-theme=dark] #cbpro-header,html[data-cbpro-theme=dark] #cbpro-footer{background:var(--cb-surface);border-color:var(--cb-line);color:var(--cb-subtle)}
+html[data-cbpro-theme=dark] .cbpro-top a,html[data-cbpro-theme=dark] .cbpro-top summary,html[data-cbpro-theme=dark] #cbpro-footer strong,html[data-cbpro-theme=dark] #cbpro-footer a,html[data-cbpro-theme=dark] #cbpro-menu{color:var(--cb-ink)}
+html[data-cbpro-theme=dark] .cbpro-top details>div{background:var(--cb-surface);border-color:var(--cb-line)}
+html[data-cbpro-theme=dark] #cbpro-mobile a,html[data-cbpro-theme=dark] .cbpro-top details a:hover{background:var(--cb-soft);color:var(--cb-ink)}
+html[data-cbpro-theme=dark] .cbpro-top img,html[data-cbpro-theme=dark] #cbpro-footer img{filter:brightness(1.65)}
+html[data-cbpro-theme=dark] .cbpro-shortcuts{background:var(--cb-surface);color:var(--cb-ink)}
+html[data-cbpro-theme=dark] .cbpro-shortcuts>a+a{border-color:var(--cb-line)}
+html[data-cbpro-theme=dark] .cbpro-shortcuts>a:hover{background:var(--cb-soft)}
+html[data-cbpro-theme=dark] .cbpro-shortcuts div>span{color:var(--cb-subtle)}
+html[data-cbpro-theme=dark] #root .text-white{color:var(--cb-ink)}
+html[data-cbpro-theme=dark] #root .bg-primary{color:#102137}
+html[data-cbpro-theme=dark] .cbpro-home-content .home-section--news,html[data-cbpro-theme=dark] .cbpro-home-content .home-editorial-section,html[data-cbpro-theme=dark] .cbpro-home-content .home-section--champions,html[data-cbpro-theme=dark] .cbpro-home-content .home-section--friendlies{background:var(--cb-page)!important;border-color:var(--cb-line)}
+html[data-cbpro-theme=dark] .cbpro-more-news{background:var(--cb-surface);color:var(--cb-ink);border-color:var(--cb-line)}
+html[data-cbpro-theme=dark] #root .home-section--news .text-muted-foreground{color:var(--cb-subtle)}
+html[data-cbpro-theme=dark] #root .cbpro-top-teams img{background:#edf1f6}
+html[data-cbpro-theme=dark] #root .home-section--recruitment .grid>button>div:first-child span{color:#abc9ed}
+@media(max-width:1050px){.cbpro-top{gap:12px}.cbpro-top nav{gap:15px}.cbpro-top>a:first-child{width:145px}#root .home-section--recruitment .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cbpro-dashboard #root main>header{top:74px}}
+@media(max-width:650px){#root .home-section--champions .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#root .home-section--champions h3{font-size:29px}#root .home-section--champions .grid>div>div>a:first-child>div{height:170px;padding:16px}#root .home-section--champions .grid img[alt="Troféu"]{height:136px;max-width:125px}#root .home-section--champions .grid>div>div>div{padding:12px}#root .home-section--champions .grid>div>div>div.border-t span{font-size:13px}#root .home-section--champions .grid>div>div>div:last-child p{font-size:16px}#root .home-section--champions .grid>div>div>div.border-t img{width:25px;height:25px}#root .home-section--recruitment h3{font-size:29px}#root .home-section--recruitment .grid{gap:12px}#root .home-section--recruitment .grid>button{padding:15px;min-height:260px}#root .home-section--recruitment .grid>button>div:nth-child(2){display:block}#root .home-section--recruitment .grid>button>div:nth-child(2)>div:first-child{margin-bottom:10px}#root .home-section--recruitment .grid>button>.grid p:first-child{font-size:19px}#root .home-section--recruitment .grid>button>.grid p:last-child{font-size:10px}#root .home-section--recruitment .grid>button>.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}#root .home-section--recruitment .grid>button>div:nth-child(2) p{font-size:14px}#cbpro-theme{width:34px;height:34px}.cbpro-top{gap:9px}.cbpro-top>a:first-child{width:110px}.cbpro-top .cbpro-account{font-size:11px;padding:10px}.cbpro-top .cbpro-account span{display:none}#root .cbpro-quick-actions{padding:16px}#root .cbpro-quick-actions .grid{grid-template-columns:1fr 1fr;gap:10px}#root .cbpro-quick-actions .grid>button{padding:16px 12px;display:flex;flex-direction:column;align-items:flex-start;min-height:120px}#root .cbpro-quick-actions .grid>button span{font-size:14px}#cbpro-dashboard-welcome h2{font-size:34px}#cbpro-dashboard-welcome span{font-size:14px}}
+
+:root{--surface:0 0% 100%}html[data-cbpro-theme=dark]{--surface:217 44% 15%}
+#root img[src*="/team-emblems/"],#root img[src*="/federation-logos/"]{object-fit:contain!important;object-position:center}
+#root .cbpro-top-teams .grid>div{margin-top:0!important}
+#root .cbpro-top-teams .grid>div>a>div{background:var(--cb-surface);height:100%;border:0;box-shadow:none;transform:none}
+#root .cbpro-top-teams .grid>div>a>div>div:first-child{background:var(--cb-soft);padding:12px 20px;color:var(--cb-ink);border-color:var(--cb-line)}
+#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2){padding:24px;gap:12px}
+#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2)>div:first-child{width:96px;height:96px;min-width:96px;overflow:visible;background:transparent;border:0;align-items:center;justify-content:center}
+#root .cbpro-top-teams img,html[data-cbpro-theme=dark] #root .cbpro-top-teams img{width:88px!important;height:88px!important;max-width:88px;max-height:88px;padding:10px;background:var(--cb-logo-background,#edf2f7);border-radius:15px}
+#root .cbpro-top-teams h3{font:600 22px Barlow;text-transform:none;letter-spacing:0;color:var(--cb-ink)}
+#root .cbpro-top-teams p.text-foreground,#root .cbpro-top-teams p.text-primary{font:700 40px/1 'Barlow Condensed'}
+#root .home-section--champions .grid>div>div>div:last-child p,#root .home-section--champions .grid>div>div>div:last-child a{color:var(--cb-ink)}
+#root .home-section--champions .grid>div>div>div:last-child span.text-muted-foreground{color:var(--cb-subtle)}
+#root .home-section--recruitment .grid>button>div:nth-child(2)>div:first-child{background:#dce5ef}
+#root [data-sidebar=menu-item][hidden]{display:none!important}
+html[data-cbpro-theme=dark] .cbpro-top img,html[data-cbpro-theme=dark] #cbpro-footer img{filter:none}
+#root .cbpro-quick-actions .grid>div:last-child:not(:first-child) button{width:100%;height:100%;min-height:98px;white-space:normal;clip-path:none;border-radius:12px;border:1px solid var(--cb-line);background:var(--cb-surface);color:var(--cb-ink);padding:20px 16px;font:600 15px/1.4 Barlow;letter-spacing:0;text-transform:none;gap:12px}
+#root .cbpro-quick-actions .grid>div:last-child button svg{flex-shrink:0}
+@media(max-width:650px){#root .cbpro-quick-actions .grid>div:last-child:not(:first-child) button{flex-direction:column;align-items:flex-start;min-height:120px;padding:16px 12px;font-size:14px}}
+/* Competition podium: the leader owns the centre of the field. */
+#root .cbpro-top-teams .grid{align-items:end;gap:22px}
+#root .cbpro-top-teams .grid>div{--podium-accent:#a5b6ca}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]{--podium-accent:#e4bd76}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="3"]{--podium-accent:#c89273}
+#root .cbpro-top-teams .grid>div>a>div{border-radius:22px;border:1px solid var(--cb-line);position:relative;overflow:hidden;box-shadow:0 12px 30px #0611260b}
+#root .cbpro-top-teams .grid>div>a>div>div:first-child{padding:16px 22px;background:transparent;border:0;color:var(--podium-accent)}
+#root .cbpro-top-teams .grid>div>a>div>div:first-child span:first-child{font:700 24px 'Barlow Condensed';letter-spacing:0;color:var(--podium-accent)}
+#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2){padding:8px 24px 26px;gap:16px;position:relative}
+#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2)>div:first-child{width:110px;height:110px;min-width:110px;z-index:1}
+#root .cbpro-top-teams img,html[data-cbpro-theme=dark] #root .cbpro-top-teams img{width:100px!important;height:100px!important;max-width:100px;max-height:100px;border-radius:24px;padding:16px;box-shadow:0 8px 20px #0001}
+#root .cbpro-top-teams h3{font:600 24px/1.2 Barlow}
+#root .cbpro-top-teams p.text-foreground,#root .cbpro-top-teams p.text-primary{font:700 52px/1 'Barlow Condensed';color:var(--cb-ink);letter-spacing:-1px}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]>a>div{border-color:#c4a15f;background:#13315b;color:#fff}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"] h3,#root .cbpro-top-teams .grid>div[data-cbpro-place="1"] .text-muted-foreground{color:#dce7f5}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"] p.text-primary{color:#f1d59b}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]>a>div>div:nth-child(2){padding-top:30px;padding-bottom:34px}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]>a>div:before{content:'';position:absolute;width:330px;height:330px;border:1px solid #ffffff0e;border-radius:50%;top:62px;left:50%;transform:translateX(-50%);pointer-events:none}
+#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2)>div:last-child{font:600 14px Barlow;padding-top:16px;border-top:1px solid #829bb32b;width:100%;justify-content:center;gap:20px}
+#root .cbpro-top-teams .grid>div>a:focus-visible>div{outline:3px solid var(--cb-blue);outline-offset:4px}
+/* Hall of players: a featured title holder and four spacious player panels. */
+#root .cbpro-club-icons{max-width:1232px}
+#root .cbpro-club-icons>div:first-child{text-align:left;position:relative;margin-bottom:28px}
+#root .cbpro-club-icons h2{font:700 38px/1.1 'Barlow Condensed';letter-spacing:0;text-transform:none;color:var(--cb-ink)}
+#root .cbpro-club-icons>div:first-child>p{font:400 14px Barlow;text-transform:none;letter-spacing:0;color:var(--cb-subtle)}
+#root .cbpro-club-icons>div:first-child>div{display:none}
+#root .cbpro-club-icons>div:first-child>button{position:absolute;right:0;bottom:0;font:600 13px Barlow;letter-spacing:0;text-transform:none}
+#root .cbpro-club-icons>.grid{grid-template-columns:1.04fr 1fr 1fr;gap:18px;align-items:stretch}
+#root .cbpro-club-icons>.grid>div{border-radius:20px;padding:22px;background:var(--cb-surface);border:1px solid var(--cb-line);transition:border-color .15s;min-width:0}
+#root .cbpro-club-icons>.grid>div>span{top:16px;right:20px;font:700 32px 'Barlow Condensed';color:var(--cb-subtle);opacity:.35}
+#root .cbpro-club-icons>.grid>div>a{align-items:center;gap:14px;padding-right:30px}
+#root .cbpro-club-icons>.grid>div>a>div:first-child{width:72px;height:72px;background:#dfe7f0;border:0;box-shadow:none}
+#root .cbpro-club-icons>.grid>div>a>div:last-child{min-width:0;flex:1}
+#root .cbpro-club-icons>.grid>div>a p:first-child{font:600 17px/1.3 Barlow;letter-spacing:0;text-transform:none;white-space:normal;overflow-wrap:anywhere}
+#root .cbpro-club-icons>.grid>div>a p:nth-child(2){font:400 12px/1.4 Barlow;letter-spacing:0;text-transform:none;margin-top:4px;color:var(--cb-subtle)}
+#root .cbpro-club-icons>.grid>div>a p:last-child{font:600 13px Barlow;color:var(--cb-blue);margin-top:7px}
+#root .cbpro-club-icons>.grid>div>.grid{margin-top:20px;gap:0;border-block:1px solid var(--cb-line);padding-block:12px;row-gap:14px}
+#root .cbpro-club-icons>.grid>div>.grid>div{background:none;border:0;border-radius:0;padding:0;text-align:center}
+#root .cbpro-club-icons>.grid>div>.grid>div>p:first-child{font:700 22px/1.1 'Barlow Condensed';color:var(--cb-ink)}
+#root .cbpro-club-icons>.grid>div>.grid>div>p:last-child{font:500 10px Barlow;letter-spacing:.04em;color:var(--cb-subtle);margin-top:5px}
+#root .cbpro-club-icons>.grid>div>button{margin-top:16px;border:0;background:var(--cb-soft);border-radius:9px;min-height:38px;font:600 13px Barlow;text-transform:none;letter-spacing:0;color:var(--cb-ink)}
+#root .cbpro-club-icons>.grid>div:first-child{grid-row:span 2;background:#13315b;border-color:#c4a15f;padding:30px;display:flex;flex-direction:column;justify-content:center;color:#f4f7fc}
+#root .cbpro-club-icons>.grid>div:first-child>a{flex-direction:column;text-align:center;padding:10px 0 0;gap:20px}
+#root .cbpro-club-icons>.grid>div:first-child>a>div:first-child{width:126px;height:126px;outline:1px solid #d5b675;outline-offset:6px}
+#root .cbpro-club-icons>.grid>div:first-child>a p:first-child{font-size:26px;color:#f4f7fc}
+#root .cbpro-club-icons>.grid>div:first-child>a p:nth-child(2){font-size:14px;color:#c0d0e4}
+#root .cbpro-club-icons>.grid>div:first-child>a p:last-child{font-size:18px;color:#f1d59b}
+#root .cbpro-club-icons>.grid>div:first-child>span{color:#f1d59b;opacity:1}
+#root .cbpro-club-icons>.grid>div:first-child>.grid{margin-top:30px;border-color:#ffffff26;padding-block:22px;row-gap:20px}
+#root .cbpro-club-icons>.grid>div:first-child>.grid p:first-child{color:#fff;font-size:30px}
+#root .cbpro-club-icons>.grid>div:first-child>.grid p:last-child{color:#c0d0e4}
+#root .cbpro-club-icons>.grid>div:first-child>button{background:#e4bd76;color:#172b46;margin-top:24px}
+#root .cbpro-club-icons a:focus-visible,#root .cbpro-club-icons button:focus-visible{outline:3px solid var(--cb-blue);outline-offset:4px}
+@media(max-width:1000px){#root .cbpro-club-icons>.grid{grid-template-columns:1fr 1fr}#root .cbpro-club-icons>.grid>div:first-child{grid-row:auto;grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}#root .cbpro-club-icons>.grid>div:first-child>a{grid-row:span 2;justify-content:center}#root .cbpro-club-icons>.grid>div:first-child>.grid{align-self:end}#root .cbpro-club-icons>.grid>div:first-child>button{align-self:start}}
+@media(max-width:650px){#root .cbpro-top-teams .grid{grid-template-columns:1fr;gap:14px}#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]{order:-1}#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2){padding:12px 20px 24px}#root .cbpro-top-teams .grid>div>a>div>div:nth-child(2)>div:first-child{width:88px;height:88px}#root .cbpro-top-teams img,html[data-cbpro-theme=dark] #root .cbpro-top-teams img{width:84px!important;height:84px!important}#root .cbpro-club-icons>.grid{grid-template-columns:1fr}#root .cbpro-club-icons>.grid>div:first-child{display:flex;grid-column:auto}#root .cbpro-club-icons>.grid>div{padding:22px}#root .cbpro-club-icons>div:first-child>button{position:static;margin-top:14px}#root .cbpro-club-icons h2{font-size:34px}}
+#root .cbpro-top-teams .grid>div,#root .cbpro-club-icons>.grid>div{opacity:1!important;transform:none!important}
+#root .cbpro-top-teams .grid>div,#root .cbpro-top-teams .grid>div:nth-child(2){border:0;background:transparent;border-radius:22px;align-self:end}
+#root .cbpro-top-teams .grid>div>a>div{background:var(--cb-surface)!important}
+#root .cbpro-top-teams .grid>div[data-cbpro-place="1"]>a>div{background:#13315b!important}

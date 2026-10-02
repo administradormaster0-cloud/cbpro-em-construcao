@@ -1,0 +1,16 @@
+const fs=require('fs');
+const base='data/cbpro-reconstruction/';
+const oldResponse="if(!r.ok)throw Error('Public snapshot unavailable');return r";
+const completeResponse="if(!r.ok)throw Error('Public snapshot unavailable');return r.json().then(data=>{if(!Array.isArray(data?.entries)||!(Date.parse(data.refreshed_at)+180000>Date.now()))throw Error('Public snapshot expired');return data})";
+let html=fs.readFileSync(base+'index.html','utf8');
+if(html.includes(oldResponse))html=html.replace(oldResponse,completeResponse);
+fs.writeFileSync(base+'index.html',html);
+let cloud=fs.readFileSync(base+'fc-cloud.js','utf8');
+if(cloud.includes(oldResponse))cloud=cloud.replace(oldResponse,completeResponse);
+cloud=cloud.replace(".then(async r=>{if(!r?.ok)return;const data=await r.json();", ".then(data=>{if(!data)return;");
+cloud=cloud.replace('if(early)delete window.cbproEarlySnapshot;', '/* Shared decoded snapshot is also consumed by the semantic home. */');
+cloud=cloud.replace("let snapshotDisabledUntil=0;", "let snapshotDisabledUntil=0,routePrefetchScheduled=false;");
+cloud=cloud.replace("if(location.pathname==='/')setTimeout(()=>", "if(location.pathname==='/'&&!routePrefetchScheduled){routePrefetchScheduled=true;setTimeout(()=>");
+cloud=cloud.replace("else warm();},1200);const entry=", "else warm();},1200);}const entry=");
+fs.writeFileSync(base+'fc-cloud.js',cloud);
+console.log('Snapshot race waits for complete, fresh JSON; homepage route prefetch scheduled once.');

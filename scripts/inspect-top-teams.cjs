@@ -1,0 +1,2 @@
+const {chromium}=require('C:/Users/Mateus/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');(async()=>{const b=await chromium.launch();const p=await b.newPage();await p.goto('http://127.0.0.1:5188');await p.waitForTimeout(8000);console.log(await p.locator('h2').evaluateAll(a=>a.filter(x=>x.textContent.includes('Melhores times')).map(x=>x.closest('section').innerHTML.slice(0,6000))));await b.close()})();
+

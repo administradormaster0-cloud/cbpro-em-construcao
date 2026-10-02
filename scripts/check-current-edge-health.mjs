@@ -1,0 +1,1 @@
+process.loadEnvFile('.env.supabase.local');const r=await fetch(process.env.SUPABASE_URL+'/functions/v1/fc-api/health',{headers:{apikey:process.env.SUPABASE_ANON_KEY},signal:AbortSignal.timeout(15000)});console.log(JSON.stringify({status:r.status,body:await r.json()}));

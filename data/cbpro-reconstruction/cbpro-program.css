@@ -1,0 +1,6 @@
+/* Approved second proposal: measured artwork layer. */
+.program-plate-frame{position:relative;width:100%;aspect-ratio:1536/1024;background:#f7f8f8;overflow:hidden}
+.program-plate-frame::before{content:"";position:absolute;inset:0 0 auto;height:58.69%;background:#08172d}
+.program-plate{position:absolute;object-fit:contain;display:block}
+.program-plate--hero-background,.program-plate--news-main-image,.program-plate--news-thumb-0,.program-plate--news-thumb-1{object-fit:cover}
+body{margin:0}#root{display:none}

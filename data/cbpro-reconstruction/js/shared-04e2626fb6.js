@@ -1,0 +1,4 @@
+
+const {} = globalThis;
+async function extractColorsFromImage(i){return new Promise(o=>{const et=new Image;et.crossOrigin="anonymous",et.onload=()=>{try{const st=document.createElement("canvas"),at=50;st.width=at,st.height=at;const vt=st.getContext("2d");vt.drawImage(et,0,0,at,at);const Ct=vt.getImageData(0,0,at,at).data,Tt={};for(let $t=0;$t<Ct.length;$t+=16){const qt=Ct[$t],Ht=Ct[$t+1],Gt=Ct[$t+2];if(Ct[$t+3]<128)continue;const tr=(qt+Ht+Gt)/3;if(tr<30||tr>225)continue;const rr=Math.round(qt/32)*32,nr=Math.round(Ht/32)*32,jr=Math.round(Gt/32)*32,ir=`#${rr.toString(16).padStart(2,"0")}${nr.toString(16).padStart(2,"0")}${jr.toString(16).padStart(2,"0")}`;Tt[ir]=(Tt[ir]||0)+1}const Lt=Object.entries(Tt).sort(($t,qt)=>qt[1]-$t[1]).slice(0,3).map(([$t])=>$t);o(Lt.length>0?Lt:["#6366f1","#8b5cf6"])}catch{o(["#6366f1","#8b5cf6"])}},et.onerror=()=>o(["#6366f1","#8b5cf6"]),et.src=i})}
+export {extractColorsFromImage};

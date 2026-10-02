@@ -1,0 +1,13 @@
+const fs = require("fs");
+const p = "D:/FC CLUBS/fcclubs/scripts/build-hostinger.mjs";
+let s = fs.readFileSync(p, "utf8");
+const old = "for(const dir of ['js','css','assets'])copyTree('../site/'+dir,out+'/'+dir);";
+const neu = "const entry=require('fs').readdirSync('data/public-js').find(n=>/^index-[a-f0-9]+\\.js$/.test(n));if(!entry)throw Error('missing split entry');\ncopyTree('data/public-js',out+'/js');for(const dir of ['css','assets'])copyTree('../site/'+dir,out+'/'+dir);";
+if (!s.includes(old)) throw new Error("copy loop missing");
+s = s.replace(old, neu);
+s = s.replace("writeFileSync(out+'/index.html',html);", "html=html.replace('index-CL0UsMlE.rw7div.js',entry);writeFileSync(out+'/index.html',html);");
+const cache = `'<IfModule mod_headers.c>','<FilesMatch "\\\\.(?:js|css|png|jpe?g|webp|gif|svg|woff2|ico)$">','Header set Cache-Control "public, max-age=31536000, immutable"','</FilesMatch>',`;
+if (!s.includes("'<IfModule mod_headers.c>',")) throw new Error("headers missing");
+s = s.replace("'<IfModule mod_headers.c>',", cache);
+fs.writeFileSync(p, s);
+console.log("build script patched");

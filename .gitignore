@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-public/
+*.log
+.env
+.env.*
+!.env.example
+!.env.smtp.example
+*.sqlite*
+*.db
+__pycache__/
+*.pyc
+.impeccable/
+*.tsbuildinfo

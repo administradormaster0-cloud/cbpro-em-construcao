@@ -1,0 +1,2191 @@
+{
+  "entry": "index-62a2fbf9ed.js",
+  "entryRaw": 2337597,
+  "entryGz": 555647,
+  "missingExports": [],
+  "routes": [
+    {
+      "page": "AuthRoute",
+      "raw": 295,
+      "gz": 201,
+      "file": "route-AuthRoute.7edf86b1.js",
+      "stmts": 1
+    },
+    {
+      "page": "SignupWizard",
+      "raw": 28836,
+      "gz": 6551,
+      "file": "route-SignupWizard.27241c4f.js",
+      "stmts": 2
+    },
+    {
+      "page": "Onboarding",
+      "raw": 6234,
+      "gz": 2080,
+      "file": "route-Onboarding.584e1cb5.js",
+      "stmts": 1
+    },
+    {
+      "page": "ResetPassword",
+      "raw": 4574,
+      "gz": 1729,
+      "file": "route-ResetPassword.b32ff6e0.js",
+      "stmts": 1
+    },
+    {
+      "page": "Index",
+      "raw": 109597,
+      "gz": 24420,
+      "file": "route-Index.446a9311.js",
+      "stmts": 42
+    },
+    {
+      "page": "PlayerPublic",
+      "raw": 170321,
+      "gz": 29535,
+      "file": "route-PlayerPublic.733addc8.js",
+      "stmts": 40
+    },
+    {
+      "page": "TeamPublic",
+      "raw": 206585,
+      "gz": 35098,
+      "file": "route-TeamPublic.8aa69ec1.js",
+      "stmts": 23
+    },
+    {
+      "page": "TournamentsPublic",
+      "raw": 22959,
+      "gz": 6136,
+      "file": "route-TournamentsPublic.f84ecc0c.js",
+      "stmts": 2
+    },
+    {
+      "page": "PlayersPublic",
+      "raw": 50349,
+      "gz": 11716,
+      "file": "route-PlayersPublic.29920bfe.js",
+      "stmts": 10
+    },
+    {
+      "page": "TeamsPublic",
+      "raw": 27634,
+      "gz": 7602,
+      "file": "route-TeamsPublic.c87617d7.js",
+      "stmts": 10
+    },
+    {
+      "page": "OrgsPublic",
+      "raw": 8300,
+      "gz": 2858,
+      "file": "route-OrgsPublic.542b5b16.js",
+      "stmts": 2
+    },
+    {
+      "page": "OrganizationRequest",
+      "raw": 11316,
+      "gz": 3446,
+      "file": "route-OrganizationRequest.53f06161.js",
+      "stmts": 3
+    },
+    {
+      "page": "FederationPublic",
+      "raw": 565876,
+      "gz": 107380,
+      "file": "route-FederationPublic.591d2d8d.js",
+      "stmts": 416
+    },
+    {
+      "page": "TournamentPublic",
+      "raw": 193185,
+      "gz": 44319,
+      "file": "route-TournamentPublic.a5011329.js",
+      "stmts": 59
+    },
+    {
+      "page": "BlogPostPublic",
+      "raw": 7688,
+      "gz": 2508,
+      "file": "route-BlogPostPublic.cad224ce.js",
+      "stmts": 2
+    },
+    {
+      "page": "RegulationsPublic",
+      "raw": 8146,
+      "gz": 2878,
+      "file": "route-RegulationsPublic.f429c14a.js",
+      "stmts": 2
+    },
+    {
+      "page": "PrivacyPolicy",
+      "raw": 4059,
+      "gz": 1288,
+      "file": "route-PrivacyPolicy.952b459b.js",
+      "stmts": 1
+    },
+    {
+      "page": "DeleteAccount",
+      "raw": 8862,
+      "gz": 2357,
+      "file": "route-DeleteAccount.536fa1c8.js",
+      "stmts": 1
+    },
+    {
+      "page": "MarketplaceHub",
+      "raw": 94234,
+      "gz": 22721,
+      "file": "route-MarketplaceHub.dd3324b5.js",
+      "stmts": 37
+    },
+    {
+      "page": "TransfersPublic",
+      "raw": 10546,
+      "gz": 3564,
+      "file": "route-TransfersPublic.bb5147ef.js",
+      "stmts": 5
+    },
+    {
+      "page": "RecruitmentPublic",
+      "raw": 100894,
+      "gz": 23045,
+      "file": "route-RecruitmentPublic.04740228.js",
+      "stmts": 46
+    },
+    {
+      "page": "ChampionsPublic",
+      "raw": 16589,
+      "gz": 4853,
+      "file": "route-ChampionsPublic.0f556a57.js",
+      "stmts": 9
+    },
+    {
+      "page": "CreditsPurchaseSuccess",
+      "raw": 5163,
+      "gz": 2011,
+      "file": "route-CreditsPurchaseSuccess.e0ab80ff.js",
+      "stmts": 1
+    },
+    {
+      "page": "StripeCheckoutPage",
+      "raw": 20918,
+      "gz": 6580,
+      "file": "route-StripeCheckoutPage.73e59951.js",
+      "stmts": 39
+    },
+    {
+      "page": "StripeConnectReturn",
+      "raw": 4722,
+      "gz": 1894,
+      "file": "route-StripeConnectReturn.e2091c72.js",
+      "stmts": 1
+    },
+    {
+      "page": "CreditsPurchaseCanceled",
+      "raw": 2641,
+      "gz": 1009,
+      "file": "route-CreditsPurchaseCanceled.ce207673.js",
+      "stmts": 1
+    },
+    {
+      "page": "RankedPublic",
+      "raw": 33995,
+      "gz": 9389,
+      "file": "route-RankedPublic.6ee9195e.js",
+      "stmts": 13
+    },
+    {
+      "page": "FantasyPublic",
+      "raw": 23761,
+      "gz": 5413,
+      "file": "route-FantasyPublic.21d8393b.js",
+      "stmts": 2
+    },
+    {
+      "page": "FantasyMarketPublic",
+      "raw": 9382,
+      "gz": 2879,
+      "file": "route-FantasyMarketPublic.f71f0e20.js",
+      "stmts": 2
+    },
+    {
+      "page": "FantasyLeaguePublic",
+      "raw": 9738,
+      "gz": 2830,
+      "file": "route-FantasyLeaguePublic.3b48de3b.js",
+      "stmts": 1
+    },
+    {
+      "page": "RnkPlayersPublic",
+      "raw": 26949,
+      "gz": 7539,
+      "file": "route-RnkPlayersPublic.edc0d0f8.js",
+      "stmts": 10
+    },
+    {
+      "page": "SlugPublic",
+      "raw": 8313,
+      "gz": 2500,
+      "file": "route-SlugPublic.bb7571f2.js",
+      "stmts": 2
+    },
+    {
+      "page": "ProtectedRoute",
+      "raw": 593,
+      "gz": 306,
+      "file": "route-ProtectedRoute.2ffe1c72.js",
+      "stmts": 1
+    },
+    {
+      "page": "Dashboard",
+      "raw": 32817,
+      "gz": 8774,
+      "file": "route-Dashboard.e10db939.js",
+      "stmts": 6
+    },
+    {
+      "page": "Games",
+      "raw": 2735,
+      "gz": 992,
+      "file": "route-Games.ced6d4c2.js",
+      "stmts": 1
+    },
+    {
+      "page": "GameDetail",
+      "raw": 4292,
+      "gz": 1464,
+      "file": "route-GameDetail.0e0f8815.js",
+      "stmts": 1
+    },
+    {
+      "page": "Profiles",
+      "raw": 272147,
+      "gz": 79282,
+      "file": "route-Profiles.8b902a28.js",
+      "stmts": 43
+    },
+    {
+      "page": "Teams",
+      "raw": 127960,
+      "gz": 28145,
+      "file": "route-Teams.75344530.js",
+      "stmts": 22
+    },
+    {
+      "page": "Invites",
+      "raw": 19275,
+      "gz": 4378,
+      "file": "route-Invites.c7413ecc.js",
+      "stmts": 6
+    },
+    {
+      "page": "Tournaments",
+      "raw": 34258,
+      "gz": 8169,
+      "file": "route-Tournaments.2149fa2c.js",
+      "stmts": 8
+    },
+    {
+      "page": "TournamentDetail",
+      "raw": 10060,
+      "gz": 2758,
+      "file": "route-TournamentDetail.7fc23634.js",
+      "stmts": 1
+    },
+    {
+      "page": "MyCollection",
+      "raw": 15918,
+      "gz": 5135,
+      "file": "route-MyCollection.bf1222c2.js",
+      "stmts": 4
+    },
+    {
+      "page": "DraftArena",
+      "raw": 8064,
+      "gz": 2663,
+      "file": "route-DraftArena.3cd8bef9.js",
+      "stmts": 1
+    },
+    {
+      "page": "DraftCreate",
+      "raw": 11860,
+      "gz": 3238,
+      "file": "route-DraftCreate.4eaa2dd3.js",
+      "stmts": 1
+    },
+    {
+      "page": "DraftDetail",
+      "raw": 14792,
+      "gz": 4385,
+      "file": "route-DraftDetail.e814ce40.js",
+      "stmts": 2
+    },
+    {
+      "page": "TorneioFacil",
+      "raw": 37722,
+      "gz": 9078,
+      "file": "route-TorneioFacil.1661b2f5.js",
+      "stmts": 4
+    },
+    {
+      "page": "TorneioFacilCreate",
+      "raw": 24991,
+      "gz": 5082,
+      "file": "route-TorneioFacilCreate.6129af0a.js",
+      "stmts": 1
+    },
+    {
+      "page": "Friendlies",
+      "raw": 39503,
+      "gz": 9256,
+      "file": "route-Friendlies.ce3a1115.js",
+      "stmts": 15
+    },
+    {
+      "page": "RankedLeaderboard",
+      "raw": 10494,
+      "gz": 2987,
+      "file": "route-RankedLeaderboard.e849dcd0.js",
+      "stmts": 1
+    },
+    {
+      "page": "FantasyHub",
+      "raw": 26248,
+      "gz": 6821,
+      "file": "route-FantasyHub.25b1d0b0.js",
+      "stmts": 8
+    },
+    {
+      "page": "FantasyLeagueDetail",
+      "raw": 20445,
+      "gz": 5741,
+      "file": "route-FantasyLeagueDetail.d66143f6.js",
+      "stmts": 3
+    },
+    {
+      "page": "OrgManage",
+      "raw": 172984,
+      "gz": 36786,
+      "file": "route-OrgManage.97f5bcc6.js",
+      "stmts": 28
+    },
+    {
+      "page": "MyOrgs",
+      "raw": 5951,
+      "gz": 2109,
+      "file": "route-MyOrgs.0db8562a.js",
+      "stmts": 2
+    },
+    {
+      "page": "SocialMedia",
+      "raw": 80691,
+      "gz": 21648,
+      "file": "route-SocialMedia.3e1995a8.js",
+      "stmts": 51
+    },
+    {
+      "page": "AdminRoute",
+      "raw": 300,
+      "gz": 207,
+      "file": "route-AdminRoute.d4bc5763.js",
+      "stmts": 1
+    },
+    {
+      "page": "NotFound",
+      "raw": 83,
+      "gz": 100,
+      "file": "route-NotFound.e27e72cb.js",
+      "stmts": 0
+    },
+    {
+      "page": "Login",
+      "raw": 8739,
+      "gz": 2564,
+      "file": "route-Login.5ab55dc4.js",
+      "stmts": 1
+    },
+    {
+      "page": "AppLayout",
+      "raw": 20718,
+      "gz": 6669,
+      "file": "route-AppLayout.7579f47d.js",
+      "stmts": 17
+    },
+    {
+      "page": "AdminPanel",
+      "raw": 1497067,
+      "gz": 343194,
+      "file": "route-AdminPanel.7f414634.js",
+      "stmts": 1131
+    },
+    {
+      "page": "ReportMatchModal",
+      "raw": 25866,
+      "gz": 6594,
+      "file": "route-ReportMatchModal.5af2483b.js",
+      "stmts": 2
+    },
+    {
+      "page": "DashboardQuickCenter",
+      "raw": 23809,
+      "gz": 6626,
+      "file": "route-DashboardQuickCenter.c0f439af.js",
+      "stmts": 8
+    }
+  ],
+  "shared": [
+    {
+      "file": "shared-8296cb5d1a.js",
+      "raw": 700,
+      "gz": 397,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "ResetPassword",
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "RegulationsPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "Tournaments",
+        "DraftArena",
+        "DraftCreate",
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "Friendlies",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "SocialMedia",
+        "Login",
+        "AppLayout",
+        "AdminPanel",
+        "ReportMatchModal",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-d405dfded2.js",
+      "raw": 926,
+      "gz": 464,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "GameDetail",
+        "Profiles",
+        "Teams",
+        "Invites",
+        "Tournaments",
+        "TournamentDetail",
+        "DraftArena",
+        "DraftDetail",
+        "TorneioFacil",
+        "Friendlies",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "MyOrgs",
+        "AppLayout",
+        "AdminPanel",
+        "ReportMatchModal",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-d02d47808a.js",
+      "raw": 752,
+      "gz": 432,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "ResetPassword",
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "DraftCreate",
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "Friendlies",
+        "OrgManage",
+        "SocialMedia",
+        "Login",
+        "AppLayout",
+        "AdminPanel",
+        "ReportMatchModal",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-374a03069b.js",
+      "raw": 259,
+      "gz": 193,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "RankedPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "Tournaments",
+        "TournamentDetail",
+        "TorneioFacil",
+        "Friendlies",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-977f829814.js",
+      "raw": 3011,
+      "gz": 1214,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "RegulationsPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "Invites",
+        "TorneioFacil",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-e11c677a53.js",
+      "raw": 236,
+      "gz": 167,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "CreditsPurchaseSuccess",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "MyCollection",
+        "DraftCreate",
+        "DraftDetail",
+        "TorneioFacil",
+        "OrgManage",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-25b6ecd26f.js",
+      "raw": 9993,
+      "gz": 3067,
+      "consumers": [
+        "SignupWizard",
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "RegulationsPublic",
+        "MarketplaceHub",
+        "TransfersPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Profiles",
+        "MyCollection",
+        "Friendlies",
+        "FantasyHub",
+        "OrgManage",
+        "SocialMedia",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-6065781d48.js",
+      "raw": 16628,
+      "gz": 3954,
+      "consumers": [
+        "SignupWizard",
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "RegulationsPublic",
+        "MarketplaceHub",
+        "TransfersPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Profiles",
+        "Friendlies",
+        "FantasyHub",
+        "OrgManage",
+        "SocialMedia",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-38199c81f1.js",
+      "raw": 13864,
+      "gz": 3919,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "OrgManage",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-7ad70ac95c.js",
+      "raw": 346,
+      "gz": 253,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "ResetPassword",
+        "Index",
+        "TournamentPublic",
+        "DeleteAccount",
+        "FantasyPublic",
+        "FantasyLeaguePublic",
+        "SlugPublic",
+        "GameDetail",
+        "Teams",
+        "Invites",
+        "TournamentDetail",
+        "DraftArena",
+        "DraftCreate",
+        "DraftDetail",
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "SocialMedia",
+        "Login",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-cdd99b42aa.js",
+      "raw": 261,
+      "gz": 190,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "ResetPassword",
+        "TournamentPublic",
+        "DeleteAccount",
+        "FantasyPublic",
+        "FantasyLeaguePublic",
+        "SlugPublic",
+        "GameDetail",
+        "Teams",
+        "Invites",
+        "TournamentDetail",
+        "DraftCreate",
+        "DraftDetail",
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "SocialMedia",
+        "Login",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-f32c60ae93.js",
+      "raw": 545,
+      "gz": 282,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "AppLayout",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-cebcab0295.js",
+      "raw": 11537,
+      "gz": 3693,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "AppLayout",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-db873b5f41.js",
+      "raw": 3029,
+      "gz": 1336,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-da32940b16.js",
+      "raw": 14885,
+      "gz": 3954,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic",
+        "SlugPublic"
+      ]
+    },
+    {
+      "file": "shared-b3904428ef.js",
+      "raw": 5588,
+      "gz": 2377,
+      "consumers": [
+        "Index",
+        "FederationPublic",
+        "TournamentPublic",
+        "BlogPostPublic",
+        "RegulationsPublic",
+        "PrivacyPolicy",
+        "MarketplaceHub",
+        "TransfersPublic",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "RankedPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "SlugPublic",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-cd99e4f876.js",
+      "raw": 309,
+      "gz": 226,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "PlayersPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "BlogPostPublic",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "RankedPublic",
+        "RnkPlayersPublic",
+        "Profiles",
+        "Teams",
+        "OrgManage",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-6b92eaf278.js",
+      "raw": 503,
+      "gz": 265,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "ResetPassword",
+        "TournamentPublic",
+        "DeleteAccount",
+        "FantasyLeaguePublic",
+        "GameDetail",
+        "TournamentDetail",
+        "DraftCreate",
+        "DraftDetail",
+        "TorneioFacilCreate",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "SocialMedia",
+        "Login",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-acf79226ff.js",
+      "raw": 594,
+      "gz": 361,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "RnkPlayersPublic",
+        "Profiles",
+        "Teams",
+        "OrgManage",
+        "SocialMedia",
+        "AppLayout"
+      ]
+    },
+    {
+      "file": "shared-6cec95f46a.js",
+      "raw": 4087,
+      "gz": 1334,
+      "consumers": [
+        "Index",
+        "TeamPublic",
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "OrganizationRequest",
+        "FederationPublic",
+        "TournamentPublic",
+        "MarketplaceHub",
+        "ChampionsPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "FantasyLeaguePublic",
+        "RnkPlayersPublic"
+      ]
+    },
+    {
+      "file": "shared-3e12d845ec.js",
+      "raw": 952,
+      "gz": 478,
+      "consumers": [
+        "Index",
+        "FederationPublic",
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "CreditsPurchaseSuccess",
+        "StripeCheckoutPage",
+        "StripeConnectReturn",
+        "Profiles",
+        "Teams",
+        "FantasyHub",
+        "OrgManage",
+        "Login",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-cf6722343b.js",
+      "raw": 5069,
+      "gz": 1757,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "RankedPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "Profiles",
+        "Teams",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-05b767c530.js",
+      "raw": 253,
+      "gz": 190,
+      "consumers": [
+        "Index",
+        "PlayersPublic",
+        "TeamsPublic",
+        "TournamentPublic",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "RankedPublic",
+        "RnkPlayersPublic",
+        "Dashboard",
+        "Tournaments",
+        "OrgManage",
+        "AdminPanel",
+        "ReportMatchModal"
+      ]
+    },
+    {
+      "file": "shared-f6c4e526bd.js",
+      "raw": 181,
+      "gz": 151,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "BlogPostPublic",
+        "FantasyLeaguePublic",
+        "SlugPublic",
+        "GameDetail",
+        "TournamentDetail",
+        "DraftDetail",
+        "FantasyLeagueDetail",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-c347efb151.js",
+      "raw": 924,
+      "gz": 523,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "RnkPlayersPublic",
+        "Profiles",
+        "OrgManage",
+        "AppLayout"
+      ]
+    },
+    {
+      "file": "shared-080e908ee7.js",
+      "raw": 280,
+      "gz": 232,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "PlayersPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "BlogPostPublic",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "RnkPlayersPublic",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-ed834672dc.js",
+      "raw": 1285,
+      "gz": 422,
+      "consumers": [
+        "Index",
+        "TeamPublic",
+        "PlayersPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "RecruitmentPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "RnkPlayersPublic",
+        "FantasyLeagueDetail",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-07d15ab086.js",
+      "raw": 17734,
+      "gz": 4601,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "FantasyLeagueDetail",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-8e741dddbd.js",
+      "raw": 5856,
+      "gz": 1423,
+      "consumers": [
+        "Index",
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "RecruitmentPublic",
+        "Profiles",
+        "Teams",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-43e82eaf26.js",
+      "raw": 3111,
+      "gz": 1185,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic",
+        "RecruitmentPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "MyCollection",
+        "DraftDetail",
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-d1ce927c2c.js",
+      "raw": 22776,
+      "gz": 4132,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "RegulationsPublic",
+        "Profiles",
+        "MyCollection",
+        "Friendlies",
+        "FantasyHub",
+        "OrgManage",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-a379d860fa.js",
+      "raw": 631,
+      "gz": 340,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "FederationPublic",
+        "RnkPlayersPublic",
+        "Profiles",
+        "Teams",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-a5b84d9715.js",
+      "raw": 6566,
+      "gz": 2301,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "OrgManage",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-99047018a9.js",
+      "raw": 160,
+      "gz": 146,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "PlayersPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "RnkPlayersPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-8160f54db7.js",
+      "raw": 723,
+      "gz": 367,
+      "consumers": [
+        "Index",
+        "PlayersPublic",
+        "TournamentPublic",
+        "RecruitmentPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "RnkPlayersPublic",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-224c059857.js",
+      "raw": 8769,
+      "gz": 2897,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic",
+        "RecruitmentPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-71745439ca.js",
+      "raw": 568,
+      "gz": 323,
+      "consumers": [
+        "TournamentsPublic",
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "TransfersPublic",
+        "ChampionsPublic",
+        "RnkPlayersPublic",
+        "Tournaments"
+      ]
+    },
+    {
+      "file": "shared-8929224529.js",
+      "raw": 3518,
+      "gz": 1465,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "RecruitmentPublic",
+        "DraftCreate",
+        "Friendlies",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-1da7f5950d.js",
+      "raw": 3504,
+      "gz": 1233,
+      "consumers": [
+        "Index",
+        "TeamPublic",
+        "PlayersPublic",
+        "FederationPublic",
+        "TournamentPublic",
+        "ChampionsPublic",
+        "Teams",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-b4db60c30d.js",
+      "raw": 16965,
+      "gz": 4542,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentPublic",
+        "Profiles",
+        "Teams",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-a8ff9dd91c.js",
+      "raw": 128,
+      "gz": 126,
+      "consumers": [
+        "Index",
+        "PlayersPublic",
+        "TournamentPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "RnkPlayersPublic",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-9b2d4aac66.js",
+      "raw": 1509570,
+      "gz": 406473,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic",
+        "Dashboard",
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-a7d5dbb381.js",
+      "raw": 229,
+      "gz": 179,
+      "consumers": [
+        "Index",
+        "PlayersPublic",
+        "TournamentPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "RnkPlayersPublic",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-d0621cf774.js",
+      "raw": 5588,
+      "gz": 1665,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TeamPublic",
+        "FederationPublic",
+        "RecruitmentPublic",
+        "ChampionsPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-a0bd84e9f2.js",
+      "raw": 863,
+      "gz": 428,
+      "consumers": [
+        "PlayersPublic",
+        "Teams",
+        "Friendlies",
+        "OrgManage",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-615d9f72b6.js",
+      "raw": 8938,
+      "gz": 2900,
+      "consumers": [
+        "Index",
+        "PlayerPublic",
+        "TournamentPublic",
+        "Profiles",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-57b8bd43da.js",
+      "raw": 8023,
+      "gz": 2172,
+      "consumers": [
+        "RecruitmentPublic",
+        "Dashboard",
+        "DraftArena",
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-69dd8ed4fe.js",
+      "raw": 2163,
+      "gz": 885,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "FederationPublic",
+        "Profiles",
+        "Teams",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-6d02cd66a9.js",
+      "raw": 173,
+      "gz": 147,
+      "consumers": [
+        "PlayerPublic",
+        "FantasyPublic",
+        "FantasyMarketPublic",
+        "Profiles",
+        "FantasyLeagueDetail",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-9b93983bec.js",
+      "raw": 608,
+      "gz": 336,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "TournamentPublic",
+        "Profiles",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-e6af19c1be.js",
+      "raw": 6349,
+      "gz": 2190,
+      "consumers": [
+        "TournamentPublic",
+        "DraftCreate",
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-631b260cce.js",
+      "raw": 714,
+      "gz": 402,
+      "consumers": [
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "FantasyHub",
+        "FantasyLeagueDetail",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-ef8608137f.js",
+      "raw": 270,
+      "gz": 197,
+      "consumers": [
+        "MarketplaceHub",
+        "RecruitmentPublic",
+        "OrgManage",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-92a326036c.js",
+      "raw": 211,
+      "gz": 183,
+      "consumers": [
+        "Index",
+        "TeamPublic",
+        "FederationPublic",
+        "RecruitmentPublic",
+        "FantasyLeagueDetail"
+      ]
+    },
+    {
+      "file": "shared-8703078b41.js",
+      "raw": 290,
+      "gz": 171,
+      "consumers": [
+        "Index",
+        "TournamentPublic",
+        "OrgManage",
+        "AdminPanel",
+        "ReportMatchModal"
+      ]
+    },
+    {
+      "file": "shared-734bac4fb7.js",
+      "raw": 270,
+      "gz": 187,
+      "consumers": [
+        "Index",
+        "TournamentPublic",
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-2ef3809341.js",
+      "raw": 7427,
+      "gz": 2214,
+      "consumers": [
+        "PlayersPublic",
+        "TeamsPublic",
+        "RecruitmentPublic",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-f63815ec12.js",
+      "raw": 131768,
+      "gz": 30009,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "MarketplaceHub",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-50cd778630.js",
+      "raw": 538,
+      "gz": 327,
+      "consumers": [
+        "OrganizationRequest",
+        "FederationPublic",
+        "TorneioFacilCreate",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-6ab85fff87.js",
+      "raw": 406,
+      "gz": 250,
+      "consumers": [
+        "MyCollection",
+        "Friendlies",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-14bd87ce78.js",
+      "raw": 10552,
+      "gz": 3087,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "Profiles",
+        "Friendlies"
+      ]
+    },
+    {
+      "file": "shared-de4b4acbe3.js",
+      "raw": 9451,
+      "gz": 2139,
+      "consumers": [
+        "Index",
+        "MarketplaceHub",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-2320f7865b.js",
+      "raw": 296,
+      "gz": 202,
+      "consumers": [
+        "SignupWizard",
+        "Onboarding",
+        "Login",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-815b3e5344.js",
+      "raw": 206,
+      "gz": 157,
+      "consumers": [
+        "PlayersPublic",
+        "RecruitmentPublic",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-581688a70c.js",
+      "raw": 16199,
+      "gz": 5770,
+      "consumers": [
+        "PlayersPublic",
+        "TeamsPublic",
+        "RecruitmentPublic",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-e43c97176c.js",
+      "raw": 245,
+      "gz": 178,
+      "consumers": [
+        "Index",
+        "PlayersPublic",
+        "TeamsPublic",
+        "RnkPlayersPublic"
+      ]
+    },
+    {
+      "file": "shared-0a19ab4c0d.js",
+      "raw": 953,
+      "gz": 551,
+      "consumers": [
+        "PlayersPublic",
+        "TeamsPublic",
+        "OrgsPublic",
+        "RnkPlayersPublic"
+      ]
+    },
+    {
+      "file": "shared-ee3daa0acd.js",
+      "raw": 1560,
+      "gz": 628,
+      "consumers": [
+        "TorneioFacil",
+        "TorneioFacilCreate",
+        "OrgManage",
+        "SocialMedia"
+      ]
+    },
+    {
+      "file": "shared-22027296f2.js",
+      "raw": 7585,
+      "gz": 2560,
+      "consumers": [
+        "Profiles",
+        "Teams",
+        "TorneioFacil",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-b6a5cb5c3c.js",
+      "raw": 18004,
+      "gz": 5347,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "Profiles",
+        "Teams"
+      ]
+    },
+    {
+      "file": "shared-3fa585d755.js",
+      "raw": 12825,
+      "gz": 3902,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-b6c7dbf88c.js",
+      "raw": 2369,
+      "gz": 1059,
+      "consumers": [
+        "TournamentPublic",
+        "OrgManage",
+        "AdminPanel",
+        "ReportMatchModal"
+      ]
+    },
+    {
+      "file": "shared-04e2626fb6.js",
+      "raw": 924,
+      "gz": 551,
+      "consumers": [
+        "TournamentPublic",
+        "OrgManage",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-cdd45bc2f7.js",
+      "raw": 10597,
+      "gz": 4060,
+      "consumers": [
+        "Index",
+        "TournamentPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-5ba729b563.js",
+      "raw": 397,
+      "gz": 308,
+      "consumers": [
+        "Index",
+        "TournamentPublic",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-b90c774f2d.js",
+      "raw": 453,
+      "gz": 278,
+      "consumers": [
+        "FederationPublic",
+        "Tournaments",
+        "AppLayout"
+      ]
+    },
+    {
+      "file": "shared-40fd274b30.js",
+      "raw": 8183,
+      "gz": 2652,
+      "consumers": [
+        "Index",
+        "FederationPublic",
+        "TournamentPublic"
+      ]
+    },
+    {
+      "file": "shared-92798210c5.js",
+      "raw": 166,
+      "gz": 144,
+      "consumers": [
+        "Friendlies",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-f52c561c52.js",
+      "raw": 258,
+      "gz": 195,
+      "consumers": [
+        "MarketplaceHub",
+        "AdminPanel",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-336ddff907.js",
+      "raw": 288,
+      "gz": 213,
+      "consumers": [
+        "FederationPublic",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-292eb1d519.js",
+      "raw": 3394,
+      "gz": 1026,
+      "consumers": [
+        "PlayerPublic",
+        "RecruitmentPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-bf2b1e8af7.js",
+      "raw": 11540,
+      "gz": 3622,
+      "consumers": [
+        "Index",
+        "FederationPublic",
+        "ChampionsPublic"
+      ]
+    },
+    {
+      "file": "shared-4ebacfd4dc.js",
+      "raw": 544,
+      "gz": 342,
+      "consumers": [
+        "TorneioFacil",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-17da61b1e3.js",
+      "raw": 250,
+      "gz": 157,
+      "consumers": [
+        "Index",
+        "RecruitmentPublic",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-7af7458d88.js",
+      "raw": 9919,
+      "gz": 3295,
+      "consumers": [
+        "PlayersPublic",
+        "Teams",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-2a6dfd7f6d.js",
+      "raw": 4989,
+      "gz": 1610,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-34aa2deda8.js",
+      "raw": 6388,
+      "gz": 2160,
+      "consumers": [
+        "Profiles",
+        "Teams",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-65b3260a91.js",
+      "raw": 2741,
+      "gz": 1158,
+      "consumers": [
+        "PlayerPublic",
+        "Profiles",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-46554ef9a3.js",
+      "raw": 5639,
+      "gz": 2001,
+      "consumers": [
+        "OrgManage",
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-8fe7fa631b.js",
+      "raw": 3079,
+      "gz": 1163,
+      "consumers": [
+        "TournamentPublic",
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-0ff6d59ec1.js",
+      "raw": 1254,
+      "gz": 616,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic",
+        "NotFound"
+      ]
+    },
+    {
+      "file": "shared-f7f73b14b9.js",
+      "raw": 456,
+      "gz": 279,
+      "consumers": [
+        "TournamentsPublic",
+        "FederationPublic",
+        "TournamentPublic"
+      ]
+    },
+    {
+      "file": "shared-68242ea256.js",
+      "raw": 1284,
+      "gz": 611,
+      "consumers": [
+        "Teams",
+        "Invites"
+      ]
+    },
+    {
+      "file": "shared-35f0d10c4c.js",
+      "raw": 327,
+      "gz": 190,
+      "consumers": [
+        "Invites",
+        "AppLayout"
+      ]
+    },
+    {
+      "file": "shared-07cfe60275.js",
+      "raw": 46718,
+      "gz": 12634,
+      "consumers": [
+        "SocialMedia",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-cae5905a16.js",
+      "raw": 3189,
+      "gz": 1128,
+      "consumers": [
+        "MyCollection",
+        "Friendlies"
+      ]
+    },
+    {
+      "file": "shared-de3e761128.js",
+      "raw": 21644,
+      "gz": 5221,
+      "consumers": [
+        "Index",
+        "FederationPublic"
+      ]
+    },
+    {
+      "file": "shared-41e7e228f6.js",
+      "raw": 197,
+      "gz": 166,
+      "consumers": [
+        "Friendlies",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-a2cf7be5c2.js",
+      "raw": 3389,
+      "gz": 1345,
+      "consumers": [
+        "RankedPublic",
+        "RankedLeaderboard"
+      ]
+    },
+    {
+      "file": "shared-9b8ffd8ff2.js",
+      "raw": 379757,
+      "gz": 86209,
+      "consumers": [
+        "OrgManage",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-8add1d2c87.js",
+      "raw": 219,
+      "gz": 151,
+      "consumers": [
+        "FederationPublic",
+        "OrgManage"
+      ]
+    },
+    {
+      "file": "shared-42c010f19f.js",
+      "raw": 96731,
+      "gz": 25408,
+      "consumers": [
+        "Index",
+        "TournamentPublic"
+      ]
+    },
+    {
+      "file": "shared-027eabda84.js",
+      "raw": 54550,
+      "gz": 16024,
+      "consumers": [
+        "PlayerPublic",
+        "Profiles"
+      ]
+    },
+    {
+      "file": "shared-3f57a697cb.js",
+      "raw": 7019,
+      "gz": 2253,
+      "consumers": [
+        "Index",
+        "RecruitmentPublic"
+      ]
+    },
+    {
+      "file": "shared-9287fcdb5e.js",
+      "raw": 30679,
+      "gz": 8239,
+      "consumers": [
+        "MarketplaceHub",
+        "DashboardQuickCenter"
+      ]
+    },
+    {
+      "file": "shared-de1e2aa484.js",
+      "raw": 13498,
+      "gz": 3782,
+      "consumers": [
+        "TeamPublic",
+        "Teams"
+      ]
+    },
+    {
+      "file": "shared-397fe5fcd3.js",
+      "raw": 352,
+      "gz": 251,
+      "consumers": [
+        "Teams",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-912d543957.js",
+      "raw": 1619,
+      "gz": 837,
+      "consumers": [
+        "MarketplaceHub",
+        "AdminPanel"
+      ]
+    },
+    {
+      "file": "shared-d6142e4620.js",
+      "raw": 1263,
+      "gz": 606,
+      "consumers": [
+        "PlayerPublic",
+        "TeamPublic"
+      ]
+    },
+    {
+      "file": "shared-fd8b9c678c.js",
+      "raw": 25847,
+      "gz": 5198,
+      "consumers": [
+        "TeamPublic",
+        "FederationPublic"
+      ]
+    },
+    {
+      "file": "shared-ccce6463bb.js",
+      "raw": 877,
+      "gz": 406,
+      "consumers": [
+        "FederationPublic",
+        "TournamentPublic"
+      ]
+    },
+    {
+      "file": "shared-abf7fdca6e.js",
+      "raw": 411,
+      "gz": 303,
+      "consumers": [
+        "FantasyLeaguePublic",
+        "FantasyLeagueDetail"
+      ]
+    },
+    {
+      "file": "shared-1bcb9d03f4.js",
+      "raw": 4466,
+      "gz": 1565,
+      "consumers": [
+        "FantasyPublic",
+        "FantasyMarketPublic"
+      ]
+    }
+  ],
+  "optionalLanguages": "cbpro-languages-b0cfb81ddf.js"
+}

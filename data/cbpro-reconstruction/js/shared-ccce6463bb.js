@@ -1,0 +1,4 @@
+
+const {reactExports,supabase} = globalThis;
+function useOrgTemplate(i){const[o,et]=reactExports.useState("default-free"),[st,at]=reactExports.useState(!1),[vt,Ct]=reactExports.useState(!0);return reactExports.useEffect(()=>{if(!i){Ct(!1);return}(async()=>{const{data:Lt}=await supabase.from("org_template_assignments").select("template_id, is_forced").eq("org_id",i).maybeSingle();if(!(Lt!=null&&Lt.template_id)){et("default-free"),at(!1),Ct(!1);return}at(Lt.is_forced??!1);const{data:$t}=await supabase.from("org_templates").select("slug, is_active").eq("id",Lt.template_id).maybeSingle();if($t&&$t.is_active)et($t.slug);else{const{data:qt}=await supabase.from("org_templates").select("slug, is_active").eq("slug",Lt.template_id).maybeSingle();qt&&qt.is_active?et(qt.slug):et("default-free")}Ct(!1)})()},[i]),{templateSlug:o,isForced:st,loading:vt}}
+export {useOrgTemplate};

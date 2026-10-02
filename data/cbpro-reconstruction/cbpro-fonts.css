@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/program-7cHpv4kjgoGqM7EPCw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/program-7cHqv4kjgoGqM7E3_-gc4A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/program-7cHqv4kjgoGqM7E30-8c4A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/program-7cHqv4kjgoGqM7E3t-4c4A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKtWzUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKh2zUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKa2vUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKUmvUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKNWvUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/assets/fonts/program-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKHGvUSw.ttf) format('truetype');
+}

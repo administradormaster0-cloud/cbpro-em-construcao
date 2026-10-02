@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+process.env.FC_DATA_DIR=mkdtempSync(join(tmpdir(),'fc-credits-'));
+const {save,where,db}=await import('../server/db.mjs');
+const {spendCredits,subscriptionStatus}=await import('../server/credits.mjs');
+const {register}=await import('../server/auth.mjs');
+const {invoke}=await import('../server/rpc.mjs');
+let user;
+test('new accounts receive their initial credits once with ledger entry',()=>{save('plan_credit_config',{plan_key:'free',monthly_credits:12});user=register('test@local.test','a-long-local-password','Teste');assert.equal(where('user_ai_credits','user_id',user.id)[0].balance,12);assert.equal(where('credit_transactions','user_id',user.id).length,1);});
+test('credit debit is atomic, checks balance and supports idempotent retry',()=>{save('ai_feature_costs',{feature_key:'card',active:true,credit_cost:5});const first=spendCredits(user,{featureKey:'card',operation_id:'once'});assert.equal(first.newBalance,7);assert.deepEqual(spendCredits(user,{featureKey:'card',operation_id:'once'}),first);assert.equal(where('credit_transactions','user_id',user.id).length,2);spendCredits(user,{featureKey:'card'});assert.throws(()=>spendCredits(user,{featureKey:'card'}),/INSUFFICIENT/);assert.equal(where('user_ai_credits','user_id',user.id)[0].balance,2);});
+test('subscription reports active local assignments and excludes expired and team plans',()=>{save('plans',{id:'pro',tier:'pro'});save('plans',{id:'ultra',tier:'ultra'});save('subscriptions',{entity_id:user.id,entity_type:'player',plan_id:'pro',game_id:'fc',status:'active'});save('subscriptions',{entity_id:user.id,entity_type:'player',plan_id:'ultra',status:'active',current_period_end:'2000-01-01'});save('subscriptions',{entity_id:user.id,entity_type:'team',plan_id:'ultra',status:'active'});assert.equal(subscriptionStatus(user).plan,'pro');assert.equal(subscriptionStatus(user).game_subscriptions.fc.plan,'pro');assert.throws(()=>invoke('check-subscription',{sync_with_stripe:true},user),/not set/);});
+test.after(()=>db.close());

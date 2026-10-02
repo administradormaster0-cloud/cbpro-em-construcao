@@ -1,0 +1,11 @@
+const fs = require("fs");
+const zlib = require("zlib");
+const p = "D:/FC CLUBS/fcclubs/data/hostinger-release/js/index-ef287076.js";
+const b = fs.readFileSync(p);
+console.log("entry raw", b.length, "gz", zlib.gzipSync(b).length);
+const home = fs.readdirSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js").find(n => n.startsWith("route-Index."));
+const hb = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js/"+home);
+console.log("home", home, hb.length, zlib.gzipSync(hb).length);
+const rk = fs.readdirSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js").find(n => n.startsWith("route-RankedPublic."));
+const rb = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js/"+rk);
+console.log("ranked", rk, rb.length, zlib.gzipSync(rb).length);

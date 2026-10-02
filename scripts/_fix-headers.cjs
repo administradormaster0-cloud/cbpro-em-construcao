@@ -1,0 +1,7 @@
+const fs = require("fs");
+let s = fs.readFileSync("D:/FC CLUBS/fcclubs/cloud/frontend.js","utf8");
+s = s.replace(
+  'const headers={"Content-Type":"application/json","Content-Range":rows.length?`${offset}-${last}/${count}`:`*/${count}`};if(method==="HEAD")return new Response(null,{status:200,headers});const accept=(headers&&headers.get&&headers.get("accept"))||"";const single=accept.includes("vnd.pgrst.object");if(single){if(rows.length!==1)return new Response(JSON.stringify({code:"PGRST116",message:"JSON object requested, multiple (or no) rows returned"}),{status:406,headers});return new Response(JSON.stringify(rows[0]),{status:200,headers});}return new Response(JSON.stringify(rows),{status:200,headers});',
+  'const responseHeaders={"Content-Type":"application/json","Content-Range":rows.length?`${offset}-${last}/${count}`:`*/${count}`};if(method==="HEAD")return new Response(null,{status:200,headers:responseHeaders});const accept=(headers&&headers.get&&headers.get("accept"))||"";const single=accept.includes("vnd.pgrst.object");if(single){if(rows.length!==1)return new Response(JSON.stringify({code:"PGRST116",message:"JSON object requested, multiple (or no) rows returned"}),{status:406,headers:responseHeaders});return new Response(JSON.stringify(rows[0]),{status:200,headers:responseHeaders});}return new Response(JSON.stringify(rows),{status:200,headers:responseHeaders});'
+);
+fs.writeFileSync("D:/FC CLUBS/fcclubs/cloud/frontend.js", s);

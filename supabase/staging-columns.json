@@ -1,0 +1,5678 @@
+[
+  {
+    "table": "ai_feature_costs",
+    "count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "feature_key",
+        "type": "text"
+      },
+      {
+        "name": "feature_label",
+        "type": "text"
+      },
+      {
+        "name": "credit_cost",
+        "type": "numeric"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_frames",
+    "count": 6,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "rarity",
+        "type": "text"
+      },
+      {
+        "name": "frame_image_url",
+        "type": "text"
+      },
+      {
+        "name": "is_animated",
+        "type": "boolean"
+      },
+      {
+        "name": "animation_css",
+        "type": "text"
+      },
+      {
+        "name": "price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "is_limited",
+        "type": "boolean"
+      },
+      {
+        "name": "max_supply",
+        "type": "text"
+      },
+      {
+        "name": "sold_count",
+        "type": "numeric"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_gallery",
+    "count": 196,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "display_name",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_listings",
+    "count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "nft_id",
+        "type": "text"
+      },
+      {
+        "name": "seller_user_id",
+        "type": "text"
+      },
+      {
+        "name": "price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "min_price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "sold_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_nfts",
+    "count": 9,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "style_key",
+        "type": "text"
+      },
+      {
+        "name": "mint_number",
+        "type": "numeric"
+      },
+      {
+        "name": "display_name",
+        "type": "text"
+      },
+      {
+        "name": "owner_user_id",
+        "type": "text"
+      },
+      {
+        "name": "creator_user_id",
+        "type": "text"
+      },
+      {
+        "name": "total_owners",
+        "type": "numeric"
+      },
+      {
+        "name": "tournament_wins",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_style_limits",
+    "count": 10,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "style_key",
+        "type": "text"
+      },
+      {
+        "name": "max_supply",
+        "type": "numeric"
+      },
+      {
+        "name": "current_supply",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "avatar_trades",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "nft_id",
+        "type": "text"
+      },
+      {
+        "name": "listing_id",
+        "type": "text"
+      },
+      {
+        "name": "seller_user_id",
+        "type": "text"
+      },
+      {
+        "name": "buyer_user_id",
+        "type": "text"
+      },
+      {
+        "name": "price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "platform_fee",
+        "type": "numeric"
+      },
+      {
+        "name": "seller_received",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "bans",
+    "count": 19,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "banned_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "target_type",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "team_scope",
+        "type": "text"
+      },
+      {
+        "name": "reason",
+        "type": "text"
+      },
+      {
+        "name": "regulation_id",
+        "type": "text"
+      },
+      {
+        "name": "is_global",
+        "type": "boolean"
+      },
+      {
+        "name": "starts_at",
+        "type": "text"
+      },
+      {
+        "name": "ends_at",
+        "type": "text"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "bracket_display_config",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "card_width",
+        "type": "numeric"
+      },
+      {
+        "name": "connector_gap",
+        "type": "numeric"
+      },
+      {
+        "name": "card_border_radius",
+        "type": "numeric"
+      },
+      {
+        "name": "emblem_size",
+        "type": "numeric"
+      },
+      {
+        "name": "emblem_img_size",
+        "type": "numeric"
+      },
+      {
+        "name": "font_size_name",
+        "type": "numeric"
+      },
+      {
+        "name": "font_size_score",
+        "type": "numeric"
+      },
+      {
+        "name": "font_size_vs",
+        "type": "numeric"
+      },
+      {
+        "name": "font_size_round_header",
+        "type": "numeric"
+      },
+      {
+        "name": "glow_intensity",
+        "type": "numeric"
+      },
+      {
+        "name": "show_schedule",
+        "type": "boolean"
+      },
+      {
+        "name": "show_status_bar",
+        "type": "boolean"
+      },
+      {
+        "name": "show_glow_effects",
+        "type": "boolean"
+      },
+      {
+        "name": "show_game_expand",
+        "type": "boolean"
+      },
+      {
+        "name": "show_md_label",
+        "type": "boolean"
+      },
+      {
+        "name": "standings_font_size",
+        "type": "numeric"
+      },
+      {
+        "name": "standings_emblem_size",
+        "type": "numeric"
+      },
+      {
+        "name": "standings_show_plan_badge",
+        "type": "boolean"
+      },
+      {
+        "name": "standings_show_advance_zone",
+        "type": "boolean"
+      },
+      {
+        "name": "standings_show_points_bar",
+        "type": "boolean"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "bracket_rounds",
+    "count": 102,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "bracket_id",
+        "type": "text"
+      },
+      {
+        "name": "round_number",
+        "type": "numeric"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "metadata_source",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "brackets",
+    "count": 29,
+    "columns": [
+      {
+        "name": "stage_id",
+        "type": "text"
+      },
+      {
+        "name": "bracket_type",
+        "type": "text"
+      },
+      {
+        "name": "metadata_source",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "champion_roster_snapshots",
+    "count": 388,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "role",
+        "type": "text"
+      },
+      {
+        "name": "handle",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "combo_effects",
+    "count": 10,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "collection_id",
+        "type": "text"
+      },
+      {
+        "name": "required_count",
+        "type": "numeric"
+      },
+      {
+        "name": "combo_tier",
+        "type": "text"
+      },
+      {
+        "name": "effect_type",
+        "type": "text"
+      },
+      {
+        "name": "effect_css",
+        "type": "text"
+      },
+      {
+        "name": "effect_animation_url",
+        "type": "text"
+      },
+      {
+        "name": "badge_label",
+        "type": "text"
+      },
+      {
+        "name": "badge_color",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "cosmetic_bundle_items",
+    "count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "bundle_id",
+        "type": "text"
+      },
+      {
+        "name": "cosmetic_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "cosmetic_bundles",
+    "count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "collection_id",
+        "type": "text"
+      },
+      {
+        "name": "bundle_tier",
+        "type": "text"
+      },
+      {
+        "name": "discount_pct",
+        "type": "numeric"
+      },
+      {
+        "name": "price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "cosmetic_collections",
+    "count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "rarity",
+        "type": "text"
+      },
+      {
+        "name": "theme_color",
+        "type": "text"
+      },
+      {
+        "name": "is_limited",
+        "type": "boolean"
+      },
+      {
+        "name": "max_supply",
+        "type": "numeric"
+      },
+      {
+        "name": "sold_count",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "cosmetics",
+    "count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "type",
+        "type": "text"
+      },
+      {
+        "name": "collection_id",
+        "type": "text"
+      },
+      {
+        "name": "rarity",
+        "type": "text"
+      },
+      {
+        "name": "animation_url",
+        "type": "text"
+      },
+      {
+        "name": "preview_url",
+        "type": "text"
+      },
+      {
+        "name": "price_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "countries",
+    "count": 197,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "iso2",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "credit_packages",
+    "count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "credits",
+        "type": "numeric"
+      },
+      {
+        "name": "price_cents",
+        "type": "numeric"
+      },
+      {
+        "name": "currency",
+        "type": "text"
+      },
+      {
+        "name": "label",
+        "type": "text"
+      },
+      {
+        "name": "popular",
+        "type": "boolean"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "stripe_price_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "credit_transactions",
+    "count": 1,
+    "columns": [
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "amount",
+        "type": "numeric"
+      },
+      {
+        "name": "balance_after",
+        "type": "numeric"
+      },
+      {
+        "name": "type",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "draft_plan_limits",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "plan_key",
+        "type": "text"
+      },
+      {
+        "name": "max_players_per_draft",
+        "type": "numeric"
+      },
+      {
+        "name": "max_teams_per_draft",
+        "type": "numeric"
+      },
+      {
+        "name": "max_active_drafts",
+        "type": "numeric"
+      },
+      {
+        "name": "can_use_premium_trophy",
+        "type": "boolean"
+      },
+      {
+        "name": "can_create_private",
+        "type": "boolean"
+      },
+      {
+        "name": "can_use_custom_team_names",
+        "type": "boolean"
+      },
+      {
+        "name": "can_view_stats",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "default_entry_cost_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "creator_share_pct",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "drafts",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "creator_user_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "mode",
+        "type": "text"
+      },
+      {
+        "name": "format",
+        "type": "text"
+      },
+      {
+        "name": "teams_count",
+        "type": "numeric"
+      },
+      {
+        "name": "players_per_team",
+        "type": "numeric"
+      },
+      {
+        "name": "total_slots",
+        "type": "numeric"
+      },
+      {
+        "name": "allow_substitutes",
+        "type": "boolean"
+      },
+      {
+        "name": "subs_per_team",
+        "type": "numeric"
+      },
+      {
+        "name": "entry_cost_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "trophy_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "is_private",
+        "type": "boolean"
+      },
+      {
+        "name": "invite_code",
+        "type": "text"
+      },
+      {
+        "name": "cooldown_until",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "champion_prize_pct",
+        "type": "numeric"
+      },
+      {
+        "name": "real_prize_description",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "eafc_newgen_matches",
+    "count": 13000,
+    "columns": [
+      {
+        "name": "match_id",
+        "type": "numeric"
+      },
+      {
+        "name": "match_type",
+        "type": "text"
+      },
+      {
+        "name": "platform",
+        "type": "text"
+      },
+      {
+        "name": "match_timestamp",
+        "type": "numeric"
+      },
+      {
+        "name": "match_date",
+        "type": "text"
+      },
+      {
+        "name": "home_club_id",
+        "type": "numeric"
+      },
+      {
+        "name": "home_club_name",
+        "type": "text"
+      },
+      {
+        "name": "away_club_id",
+        "type": "numeric"
+      },
+      {
+        "name": "away_club_name",
+        "type": "text"
+      },
+      {
+        "name": "home_goals",
+        "type": "numeric"
+      },
+      {
+        "name": "away_goals",
+        "type": "numeric"
+      },
+      {
+        "name": "home_assists",
+        "type": "numeric"
+      },
+      {
+        "name": "away_assists",
+        "type": "numeric"
+      },
+      {
+        "name": "home_result",
+        "type": "text"
+      },
+      {
+        "name": "away_result",
+        "type": "text"
+      },
+      {
+        "name": "time_ago_number",
+        "type": "numeric"
+      },
+      {
+        "name": "time_ago_unit",
+        "type": "text"
+      },
+      {
+        "name": "raw_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "home_shots",
+        "type": "numeric"
+      },
+      {
+        "name": "away_shots",
+        "type": "numeric"
+      },
+      {
+        "name": "home_passes_made",
+        "type": "numeric"
+      },
+      {
+        "name": "away_passes_made",
+        "type": "numeric"
+      },
+      {
+        "name": "home_pass_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "away_pass_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "home_tackles_made",
+        "type": "numeric"
+      },
+      {
+        "name": "away_tackles_made",
+        "type": "numeric"
+      },
+      {
+        "name": "home_tackle_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "away_tackle_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "home_saves",
+        "type": "numeric"
+      },
+      {
+        "name": "away_saves",
+        "type": "numeric"
+      },
+      {
+        "name": "home_rating_sum",
+        "type": "numeric"
+      },
+      {
+        "name": "away_rating_sum",
+        "type": "numeric"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "eafc_newgen_player_positions",
+    "count": 17,
+    "columns": [
+      {
+        "name": "position_id",
+        "type": "numeric"
+      },
+      {
+        "name": "code_ptbr",
+        "type": "text"
+      },
+      {
+        "name": "code_es",
+        "type": "text"
+      },
+      {
+        "name": "code_en",
+        "type": "text"
+      },
+      {
+        "name": "code_pt",
+        "type": "text"
+      },
+      {
+        "name": "code_ita",
+        "type": "text"
+      },
+      {
+        "name": "code_ale",
+        "type": "text"
+      },
+      {
+        "name": "code_fr",
+        "type": "text"
+      },
+      {
+        "name": "codes_ptbr",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_es",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_en",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_pt",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_ita",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_ale",
+        "type": "jsonb"
+      },
+      {
+        "name": "codes_fr",
+        "type": "jsonb"
+      },
+      {
+        "name": "label_ptbr",
+        "type": "text"
+      },
+      {
+        "name": "label_es",
+        "type": "text"
+      },
+      {
+        "name": "label_en",
+        "type": "text"
+      },
+      {
+        "name": "label_pt",
+        "type": "text"
+      },
+      {
+        "name": "label_ita",
+        "type": "text"
+      },
+      {
+        "name": "label_ale",
+        "type": "text"
+      },
+      {
+        "name": "label_fr",
+        "type": "text"
+      },
+      {
+        "name": "notes",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "easy_tournament_allowed_games",
+    "count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "easy_tournament_settings",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "min_plan_required",
+        "type": "text"
+      },
+      {
+        "name": "max_active_tournaments_pro",
+        "type": "numeric"
+      },
+      {
+        "name": "max_active_tournaments_ultra",
+        "type": "numeric"
+      },
+      {
+        "name": "max_teams_pro",
+        "type": "numeric"
+      },
+      {
+        "name": "max_teams_ultra",
+        "type": "numeric"
+      },
+      {
+        "name": "allow_custom_teams",
+        "type": "boolean"
+      },
+      {
+        "name": "allow_platform_teams",
+        "type": "boolean"
+      },
+      {
+        "name": "allow_md5",
+        "type": "boolean"
+      },
+      {
+        "name": "allow_groups",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "ecosystem_game_cards",
+    "count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "image_url",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "subtitle",
+        "type": "text"
+      },
+      {
+        "name": "glow_color",
+        "type": "text"
+      },
+      {
+        "name": "game_ids",
+        "type": "jsonb"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "elo_federation_seasons",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "season_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "previous_federation_season_id",
+        "type": "text"
+      },
+      {
+        "name": "current_config_version_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "elo_season_teams",
+    "count": 117,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_season_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "season_tier_id",
+        "type": "text"
+      },
+      {
+        "name": "tier_position",
+        "type": "numeric"
+      },
+      {
+        "name": "elo_rating",
+        "type": "numeric"
+      },
+      {
+        "name": "matches_played",
+        "type": "numeric"
+      },
+      {
+        "name": "wins",
+        "type": "numeric"
+      },
+      {
+        "name": "draws",
+        "type": "numeric"
+      },
+      {
+        "name": "losses",
+        "type": "numeric"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "elo_season_tiers",
+    "count": 9,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_season_id",
+        "type": "text"
+      },
+      {
+        "name": "code",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "rank",
+        "type": "numeric"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "elo_tier_version_rules",
+    "count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "config_version_id",
+        "type": "text"
+      },
+      {
+        "name": "season_tier_id",
+        "type": "text"
+      },
+      {
+        "name": "max_teams",
+        "type": "numeric"
+      },
+      {
+        "name": "initial_elo",
+        "type": "numeric"
+      },
+      {
+        "name": "floor_elo",
+        "type": "numeric"
+      },
+      {
+        "name": "promotion_spots",
+        "type": "numeric"
+      },
+      {
+        "name": "relegation_spots",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "entity_slugs",
+    "count": 588,
+    "columns": [
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "entity_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "entity_visual_overrides",
+    "count": 13,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "entity_id",
+        "type": "text"
+      },
+      {
+        "name": "config",
+        "type": "jsonb"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_by",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "entrants",
+    "count": 797,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "seed",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "easy_custom_team_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_achievements",
+    "count": 21,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "icon",
+        "type": "text"
+      },
+      {
+        "name": "rarity",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "type": "text"
+      },
+      {
+        "name": "coin_bonus",
+        "type": "numeric"
+      },
+      {
+        "name": "xp_bonus",
+        "type": "numeric"
+      },
+      {
+        "name": "unlock_condition",
+        "type": "jsonb"
+      },
+      {
+        "name": "repeatable",
+        "type": "boolean"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "is_seasonal",
+        "type": "boolean"
+      },
+      {
+        "name": "glow_color",
+        "type": "text"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_league_members",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "league_id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "total_points",
+        "type": "numeric"
+      },
+      {
+        "name": "round_points",
+        "type": "numeric"
+      },
+      {
+        "name": "rank",
+        "type": "text"
+      },
+      {
+        "name": "joined_at",
+        "type": "text"
+      },
+      {
+        "name": "budget_remaining",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_lineup_players",
+    "count": 11,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "lineup_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "position_slot",
+        "type": "text"
+      },
+      {
+        "name": "is_captain",
+        "type": "boolean"
+      },
+      {
+        "name": "fantasy_points",
+        "type": "numeric"
+      },
+      {
+        "name": "purchase_value",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_lineups",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "league_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "round_number",
+        "type": "numeric"
+      },
+      {
+        "name": "formation",
+        "type": "text"
+      },
+      {
+        "name": "captain_player_id",
+        "type": "text"
+      },
+      {
+        "name": "total_value",
+        "type": "numeric"
+      },
+      {
+        "name": "total_points",
+        "type": "numeric"
+      },
+      {
+        "name": "is_locked",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_player_achievements",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "achievement_id",
+        "type": "text"
+      },
+      {
+        "name": "unlocked_at",
+        "type": "text"
+      },
+      {
+        "name": "match_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "coins_awarded",
+        "type": "numeric"
+      },
+      {
+        "name": "xp_awarded",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_player_values",
+    "count": 1577,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "market_value",
+        "type": "numeric"
+      },
+      {
+        "name": "previous_value",
+        "type": "numeric"
+      },
+      {
+        "name": "total_fantasy_points",
+        "type": "numeric"
+      },
+      {
+        "name": "matches_played",
+        "type": "numeric"
+      },
+      {
+        "name": "average_points",
+        "type": "numeric"
+      },
+      {
+        "name": "streak_count",
+        "type": "numeric"
+      },
+      {
+        "name": "streak_type",
+        "type": "text"
+      },
+      {
+        "name": "last_match_points",
+        "type": "numeric"
+      },
+      {
+        "name": "volatility_factor",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_rounds",
+    "count": 30,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "round_number",
+        "type": "numeric"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "start_date",
+        "type": "text"
+      },
+      {
+        "name": "end_date",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_scoring_config",
+    "count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "pts_goal",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_assist",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_shot",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_mvp",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_pass",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_tackle",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_save",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_victory",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_draw",
+        "type": "numeric"
+      },
+      {
+        "name": "pts_loss",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_high_threshold",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_high_bonus",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_mid_threshold",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_mid_bonus",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_low_threshold",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_low_penalty",
+        "type": "numeric"
+      },
+      {
+        "name": "tier_multipliers",
+        "type": "jsonb"
+      },
+      {
+        "name": "position_weights",
+        "type": "jsonb"
+      },
+      {
+        "name": "market_factor",
+        "type": "numeric"
+      },
+      {
+        "name": "min_floor_value",
+        "type": "numeric"
+      },
+      {
+        "name": "max_daily_change_pct",
+        "type": "numeric"
+      },
+      {
+        "name": "streak_bonus_pct",
+        "type": "numeric"
+      },
+      {
+        "name": "captain_multiplier",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "fantasy_teams",
+    "count": 7,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "team_name",
+        "type": "text"
+      },
+      {
+        "name": "logo_url",
+        "type": "text"
+      },
+      {
+        "name": "coins",
+        "type": "numeric"
+      },
+      {
+        "name": "total_points",
+        "type": "numeric"
+      },
+      {
+        "name": "division",
+        "type": "text"
+      },
+      {
+        "name": "streak_count",
+        "type": "numeric"
+      },
+      {
+        "name": "streak_type",
+        "type": "text"
+      },
+      {
+        "name": "xp",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_blog_posts",
+    "count": 13,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "type": "text"
+      },
+      {
+        "name": "cover_image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "author_user_id",
+        "type": "text"
+      },
+      {
+        "name": "published",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "subtitle",
+        "type": "text"
+      },
+      {
+        "name": "tags",
+        "type": "jsonb"
+      },
+      {
+        "name": "source",
+        "type": "text"
+      },
+      {
+        "name": "is_ai_generated",
+        "type": "boolean"
+      }
+    ]
+  },
+  {
+    "table": "federation_countries",
+    "count": 23,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_customizations",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "primary_color",
+        "type": "text"
+      },
+      {
+        "name": "secondary_color",
+        "type": "text"
+      },
+      {
+        "name": "accent_color",
+        "type": "text"
+      },
+      {
+        "name": "bg_image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "social_instagram",
+        "type": "text"
+      },
+      {
+        "name": "social_twitter",
+        "type": "text"
+      },
+      {
+        "name": "social_facebook",
+        "type": "text"
+      },
+      {
+        "name": "social_youtube",
+        "type": "text"
+      },
+      {
+        "name": "social_tiktok",
+        "type": "text"
+      },
+      {
+        "name": "social_discord",
+        "type": "text"
+      },
+      {
+        "name": "hero_overlay_opacity",
+        "type": "numeric"
+      },
+      {
+        "name": "hero_overlay_filter",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_followers",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_gallery",
+    "count": 203,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "caption",
+        "type": "text"
+      },
+      {
+        "name": "uploaded_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "album_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_games",
+    "count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federation_regulations",
+    "count": 11,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "template_id",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "type": "text"
+      },
+      {
+        "name": "published",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "federations",
+    "count": 17,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "short_name",
+        "type": "text"
+      },
+      {
+        "name": "logo_url",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "is_platform",
+        "type": "boolean"
+      },
+      {
+        "name": "is_verified",
+        "type": "boolean"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "region",
+        "type": "text"
+      },
+      {
+        "name": "website",
+        "type": "text"
+      },
+      {
+        "name": "contact",
+        "type": "text"
+      },
+      {
+        "name": "social_links",
+        "type": "jsonb"
+      }
+    ]
+  },
+  {
+    "table": "field_edit_costs",
+    "count": 22,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "field_key",
+        "type": "text"
+      },
+      {
+        "name": "field_label",
+        "type": "text"
+      },
+      {
+        "name": "credit_cost",
+        "type": "numeric"
+      },
+      {
+        "name": "free_edit_mode",
+        "type": "text"
+      },
+      {
+        "name": "free_edit_count",
+        "type": "numeric"
+      },
+      {
+        "name": "free_edit_period_days",
+        "type": "numeric"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "renews_per_season",
+        "type": "boolean"
+      }
+    ]
+  },
+  {
+    "table": "friendly_betting_config",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "enabled",
+        "type": "boolean"
+      },
+      {
+        "name": "house_fee_percent",
+        "type": "numeric"
+      },
+      {
+        "name": "min_stake",
+        "type": "numeric"
+      },
+      {
+        "name": "max_stake",
+        "type": "numeric"
+      },
+      {
+        "name": "allow_in_ranked",
+        "type": "boolean"
+      },
+      {
+        "name": "allow_in_casual",
+        "type": "boolean"
+      },
+      {
+        "name": "stake_matchmaking_mode",
+        "type": "text"
+      },
+      {
+        "name": "stake_tolerance_percent",
+        "type": "numeric"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "friendly_config",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "enabled",
+        "type": "boolean"
+      },
+      {
+        "name": "max_active_free",
+        "type": "numeric"
+      },
+      {
+        "name": "max_active_pro",
+        "type": "numeric"
+      },
+      {
+        "name": "max_active_ultra",
+        "type": "numeric"
+      },
+      {
+        "name": "cooldown_minutes",
+        "type": "numeric"
+      },
+      {
+        "name": "allow_cross_country",
+        "type": "boolean"
+      },
+      {
+        "name": "allowed_formats",
+        "type": "jsonb"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "friendly_listings",
+    "count": 21,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "creator_user_id",
+        "type": "text"
+      },
+      {
+        "name": "creator_team_id",
+        "type": "text"
+      },
+      {
+        "name": "mode",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "country_restricted",
+        "type": "boolean"
+      },
+      {
+        "name": "best_of",
+        "type": "numeric"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "scheduled_at",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "creator_stream_url",
+        "type": "text"
+      },
+      {
+        "name": "is_ranked",
+        "type": "boolean"
+      },
+      {
+        "name": "stake_credits",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "friendly_matches",
+    "count": 10,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "listing_id",
+        "type": "text"
+      },
+      {
+        "name": "challenger_user_id",
+        "type": "text"
+      },
+      {
+        "name": "challenger_team_id",
+        "type": "text"
+      },
+      {
+        "name": "conversation_id",
+        "type": "text"
+      },
+      {
+        "name": "score_creator",
+        "type": "text"
+      },
+      {
+        "name": "score_challenger",
+        "type": "text"
+      },
+      {
+        "name": "winner_user_id",
+        "type": "text"
+      },
+      {
+        "name": "winner_team_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "challenger_stream_url",
+        "type": "text"
+      },
+      {
+        "name": "creator_stream_url",
+        "type": "text"
+      },
+      {
+        "name": "scores",
+        "type": "jsonb"
+      },
+      {
+        "name": "reported_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "reported_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "gallery_albums",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "cover_image_key",
+        "type": "text"
+      },
+      {
+        "name": "created_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "game_platforms",
+    "count": 22,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "platform_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "games",
+    "count": 11,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "genre",
+        "type": "text"
+      },
+      {
+        "name": "participant_type",
+        "type": "text"
+      },
+      {
+        "name": "default_result_mode",
+        "type": "text"
+      },
+      {
+        "name": "default_score_label",
+        "type": "text"
+      },
+      {
+        "name": "min_roster_size",
+        "type": "numeric"
+      },
+      {
+        "name": "max_roster_size",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "logo_object_key",
+        "type": "text"
+      },
+      {
+        "name": "is_visible",
+        "type": "boolean"
+      }
+    ]
+  },
+  {
+    "table": "group_entrants",
+    "count": 704,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "stage_group_id",
+        "type": "text"
+      },
+      {
+        "name": "entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "hero_mascot_settings",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "width_px",
+        "type": "numeric"
+      },
+      {
+        "name": "height_px",
+        "type": "numeric"
+      },
+      {
+        "name": "is_visible",
+        "type": "boolean"
+      },
+      {
+        "name": "position",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "manual_title_roster",
+    "count": 793,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "manual_title_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "role",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "manual_titles",
+    "count": 101,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "title_name",
+        "type": "text"
+      },
+      {
+        "name": "trophy_image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "tier_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "target_type",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "has_roster",
+        "type": "boolean"
+      },
+      {
+        "name": "awarded_at",
+        "type": "text"
+      },
+      {
+        "name": "created_by",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "season_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "match_eafc_links",
+    "count": 3169,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "internal_match_id",
+        "type": "text"
+      },
+      {
+        "name": "eafc_match_id",
+        "type": "numeric"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "created_by",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "match_eafc_newgen_player_stats",
+    "count": 44538,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "internal_match_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "platform_handle",
+        "type": "text"
+      },
+      {
+        "name": "club_id",
+        "type": "numeric"
+      },
+      {
+        "name": "player_ea_id",
+        "type": "text"
+      },
+      {
+        "name": "pos",
+        "type": "text"
+      },
+      {
+        "name": "goals",
+        "type": "numeric"
+      },
+      {
+        "name": "assists",
+        "type": "numeric"
+      },
+      {
+        "name": "shots",
+        "type": "numeric"
+      },
+      {
+        "name": "passes_made",
+        "type": "numeric"
+      },
+      {
+        "name": "pass_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "tackles_made",
+        "type": "numeric"
+      },
+      {
+        "name": "tackle_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "saves",
+        "type": "numeric"
+      },
+      {
+        "name": "rating",
+        "type": "numeric"
+      },
+      {
+        "name": "mom",
+        "type": "boolean"
+      },
+      {
+        "name": "redcards",
+        "type": "numeric"
+      },
+      {
+        "name": "seconds_played",
+        "type": "numeric"
+      },
+      {
+        "name": "goals_conceded",
+        "type": "numeric"
+      },
+      {
+        "name": "raw_player_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "match_eafc_newgen_team_stats",
+    "count": 6336,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "internal_match_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "side",
+        "type": "text"
+      },
+      {
+        "name": "club_id",
+        "type": "numeric"
+      },
+      {
+        "name": "goals",
+        "type": "numeric"
+      },
+      {
+        "name": "goals_against",
+        "type": "numeric"
+      },
+      {
+        "name": "shots",
+        "type": "numeric"
+      },
+      {
+        "name": "passes_made",
+        "type": "numeric"
+      },
+      {
+        "name": "pass_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "tackles_made",
+        "type": "numeric"
+      },
+      {
+        "name": "tackle_attempts",
+        "type": "numeric"
+      },
+      {
+        "name": "saves",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_sum",
+        "type": "numeric"
+      },
+      {
+        "name": "raw_aggregate_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "match_series",
+    "count": 2798,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "stage_id",
+        "type": "text"
+      },
+      {
+        "name": "group_id",
+        "type": "text"
+      },
+      {
+        "name": "bracket_round_id",
+        "type": "text"
+      },
+      {
+        "name": "best_of",
+        "type": "numeric"
+      },
+      {
+        "name": "entrant_a_id",
+        "type": "text"
+      },
+      {
+        "name": "entrant_b_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "scheduled_at",
+        "type": "text"
+      },
+      {
+        "name": "winner_entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "score_a",
+        "type": "numeric"
+      },
+      {
+        "name": "score_b",
+        "type": "numeric"
+      },
+      {
+        "name": "round_number",
+        "type": "numeric"
+      },
+      {
+        "name": "match_index",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "messenger_theme",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "primary_color",
+        "type": "text"
+      },
+      {
+        "name": "secondary_color",
+        "type": "text"
+      },
+      {
+        "name": "accent_color",
+        "type": "text"
+      },
+      {
+        "name": "bubble_sent_color",
+        "type": "text"
+      },
+      {
+        "name": "bubble_received_color",
+        "type": "text"
+      },
+      {
+        "name": "chat_bg_color",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "national_team_players",
+    "count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "national_team_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "position",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "called_up_by",
+        "type": "text"
+      },
+      {
+        "name": "called_up_at",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "national_teams",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "short_name",
+        "type": "text"
+      },
+      {
+        "name": "logo_url",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "org_ranking_config",
+    "count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "weight_wins",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_draws",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_losses",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_goals",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_assists",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_rating",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_mvp",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_kills",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_sh_assists",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_damage",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_headshots",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_podiums",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_poles",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_fastest_laps",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_race_points",
+        "type": "numeric"
+      },
+      {
+        "name": "show_wins",
+        "type": "boolean"
+      },
+      {
+        "name": "show_draws",
+        "type": "boolean"
+      },
+      {
+        "name": "show_losses",
+        "type": "boolean"
+      },
+      {
+        "name": "show_goals",
+        "type": "boolean"
+      },
+      {
+        "name": "show_assists",
+        "type": "boolean"
+      },
+      {
+        "name": "show_rating",
+        "type": "boolean"
+      },
+      {
+        "name": "show_mvp",
+        "type": "boolean"
+      },
+      {
+        "name": "show_kills",
+        "type": "boolean"
+      },
+      {
+        "name": "show_sh_assists",
+        "type": "boolean"
+      },
+      {
+        "name": "show_damage",
+        "type": "boolean"
+      },
+      {
+        "name": "show_headshots",
+        "type": "boolean"
+      },
+      {
+        "name": "show_podiums",
+        "type": "boolean"
+      },
+      {
+        "name": "show_poles",
+        "type": "boolean"
+      },
+      {
+        "name": "show_fastest_laps",
+        "type": "boolean"
+      },
+      {
+        "name": "show_race_points",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "org_template_assignments",
+    "count": 2,
+    "columns": [
+      {
+        "name": "org_id",
+        "type": "text"
+      },
+      {
+        "name": "template_id",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "is_forced",
+        "type": "boolean"
+      },
+      {
+        "name": "forced_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "org_templates",
+    "count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "preview_image_key",
+        "type": "text"
+      },
+      {
+        "name": "plan_required",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "featured",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "is_premium",
+        "type": "boolean"
+      },
+      {
+        "name": "credit_price",
+        "type": "text"
+      },
+      {
+        "name": "is_exclusive_ultra",
+        "type": "boolean"
+      }
+    ]
+  },
+  {
+    "table": "performance_achievement_occurrences",
+    "count": 34138,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "achievement_type_id",
+        "type": "text"
+      },
+      {
+        "name": "source_type",
+        "type": "text"
+      },
+      {
+        "name": "internal_match_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "achieved_at",
+        "type": "text"
+      },
+      {
+        "name": "stat_value",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "period_key",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "performance_achievement_totals",
+    "count": 15041,
+    "columns": [
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "achievement_type_id",
+        "type": "text"
+      },
+      {
+        "name": "total_count",
+        "type": "numeric"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "source_type",
+        "type": "text"
+      },
+      {
+        "name": "period_key",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "performance_achievement_types",
+    "count": 69,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "code",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "scope",
+        "type": "text"
+      },
+      {
+        "name": "icon_object_key",
+        "type": "text"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "base_code",
+        "type": "text"
+      },
+      {
+        "name": "period_scope",
+        "type": "text"
+      },
+      {
+        "name": "display_label",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "plan_credit_config",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "plan_key",
+        "type": "text"
+      },
+      {
+        "name": "monthly_credits",
+        "type": "numeric"
+      },
+      {
+        "name": "rollover_enabled",
+        "type": "boolean"
+      },
+      {
+        "name": "rollover_max",
+        "type": "numeric"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "weekly_usage_threshold",
+        "type": "numeric"
+      },
+      {
+        "name": "weekly_bonus_credits",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "plans",
+    "count": 9,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "tier",
+        "type": "text"
+      },
+      {
+        "name": "price_monthly",
+        "type": "numeric"
+      },
+      {
+        "name": "price_yearly",
+        "type": "numeric"
+      },
+      {
+        "name": "ai_credits_monthly",
+        "type": "numeric"
+      },
+      {
+        "name": "features_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "stripe_price_id_monthly",
+        "type": "text"
+      },
+      {
+        "name": "stripe_price_id_yearly",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "platforms",
+    "count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "key",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "player_card_gallery",
+    "count": 24,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "label",
+        "type": "text"
+      },
+      {
+        "name": "is_ai_generated",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "player_imported_stats",
+    "count": 3606,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "total_matches",
+        "type": "numeric"
+      },
+      {
+        "name": "total_goals",
+        "type": "numeric"
+      },
+      {
+        "name": "total_assists",
+        "type": "numeric"
+      },
+      {
+        "name": "total_mvp",
+        "type": "numeric"
+      },
+      {
+        "name": "avg_rating",
+        "type": "numeric"
+      },
+      {
+        "name": "imported_at",
+        "type": "text"
+      },
+      {
+        "name": "imported_by",
+        "type": "text"
+      },
+      {
+        "name": "season_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "player_profile_change_logs",
+    "count": 1443,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "field_name",
+        "type": "text"
+      },
+      {
+        "name": "old_value",
+        "type": "text"
+      },
+      {
+        "name": "new_value",
+        "type": "text"
+      },
+      {
+        "name": "changed_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "player_profiles",
+    "count": 9125,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "handle",
+        "type": "text"
+      },
+      {
+        "name": "platform_id",
+        "type": "text"
+      },
+      {
+        "name": "platform_handle",
+        "type": "text"
+      },
+      {
+        "name": "photo_object_key",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "tier_id",
+        "type": "text"
+      },
+      {
+        "name": "position",
+        "type": "text"
+      },
+      {
+        "name": "cod_position",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "player_templates",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "preview_image_key",
+        "type": "text"
+      },
+      {
+        "name": "plan_required",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "featured",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "is_premium",
+        "type": "boolean"
+      },
+      {
+        "name": "credit_price",
+        "type": "text"
+      },
+      {
+        "name": "is_exclusive_ultra",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "profile_template_assignments",
+    "count": 77,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "entity_id",
+        "type": "text"
+      },
+      {
+        "name": "template_id",
+        "type": "text"
+      },
+      {
+        "name": "assigned_by",
+        "type": "text"
+      },
+      {
+        "name": "is_forced",
+        "type": "boolean"
+      },
+      {
+        "name": "forced_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "ranked_profiles",
+    "count": 653,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "mode",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "elo_rating",
+        "type": "numeric"
+      },
+      {
+        "name": "matches_played",
+        "type": "numeric"
+      },
+      {
+        "name": "wins",
+        "type": "numeric"
+      },
+      {
+        "name": "losses",
+        "type": "numeric"
+      },
+      {
+        "name": "draws",
+        "type": "numeric"
+      },
+      {
+        "name": "win_streak",
+        "type": "numeric"
+      },
+      {
+        "name": "best_streak",
+        "type": "numeric"
+      },
+      {
+        "name": "tier",
+        "type": "text"
+      },
+      {
+        "name": "last_match_at",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "ranked_seasons",
+    "count": 12,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "starts_at",
+        "type": "text"
+      },
+      {
+        "name": "ends_at",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "soft_reset_percent",
+        "type": "numeric"
+      },
+      {
+        "name": "source",
+        "type": "text"
+      },
+      {
+        "name": "season_type",
+        "type": "text"
+      },
+      {
+        "name": "reset_elo",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "ranking_hub_cards",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "icon_name",
+        "type": "text"
+      },
+      {
+        "name": "route",
+        "type": "text"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "ranking_seasons",
+    "count": 13,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "starts_at",
+        "type": "text"
+      },
+      {
+        "name": "ends_at",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "registrations",
+    "count": 2,
+    "columns": [
+      {
+        "name": "entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "regulation_templates",
+    "count": 10,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "type": "text"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "roles",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "key",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "rpc_fn_rnk_top_trophies",
+    "count": 10,
+    "columns": [
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "handle",
+        "type": "text"
+      },
+      {
+        "name": "display_name",
+        "type": "text"
+      },
+      {
+        "name": "platform_handle",
+        "type": "text"
+      },
+      {
+        "name": "photo_object_key",
+        "type": "text"
+      },
+      {
+        "name": "team_name",
+        "type": "text"
+      },
+      {
+        "name": "matches",
+        "type": "numeric"
+      },
+      {
+        "name": "wins",
+        "type": "numeric"
+      },
+      {
+        "name": "draws",
+        "type": "numeric"
+      },
+      {
+        "name": "losses",
+        "type": "numeric"
+      },
+      {
+        "name": "goals",
+        "type": "numeric"
+      },
+      {
+        "name": "assists",
+        "type": "numeric"
+      },
+      {
+        "name": "mvp",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_sum",
+        "type": "numeric"
+      },
+      {
+        "name": "rating_count",
+        "type": "numeric"
+      },
+      {
+        "name": "trophies",
+        "type": "numeric"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "series_games",
+    "count": 4950,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "series_id",
+        "type": "text"
+      },
+      {
+        "name": "game_number",
+        "type": "numeric"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "score_a",
+        "type": "numeric"
+      },
+      {
+        "name": "score_b",
+        "type": "numeric"
+      },
+      {
+        "name": "decided_by",
+        "type": "text"
+      },
+      {
+        "name": "tiebreak_score_a",
+        "type": "numeric"
+      },
+      {
+        "name": "tiebreak_score_b",
+        "type": "numeric"
+      },
+      {
+        "name": "placement_a",
+        "type": "text"
+      },
+      {
+        "name": "placement_b",
+        "type": "text"
+      },
+      {
+        "name": "winner_entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "scheduled_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "signup_wizard_field_config",
+    "count": 16,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "step_key",
+        "type": "text"
+      },
+      {
+        "name": "field_key",
+        "type": "text"
+      },
+      {
+        "name": "field_label",
+        "type": "text"
+      },
+      {
+        "name": "is_visible",
+        "type": "boolean"
+      },
+      {
+        "name": "is_required",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "site_feature_flags",
+    "count": 83,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "feature_key",
+        "type": "text"
+      },
+      {
+        "name": "feature_label",
+        "type": "text"
+      },
+      {
+        "name": "feature_group",
+        "type": "text"
+      },
+      {
+        "name": "entity_type",
+        "type": "text"
+      },
+      {
+        "name": "visible",
+        "type": "boolean"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "site_settings",
+    "count": 7,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "key",
+        "type": "text"
+      },
+      {
+        "name": "value",
+        "type": "jsonb"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "social_templates",
+    "count": 8,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "type": "text"
+      },
+      {
+        "name": "background_image",
+        "type": "text"
+      },
+      {
+        "name": "primary_color",
+        "type": "text"
+      },
+      {
+        "name": "secondary_color",
+        "type": "text"
+      },
+      {
+        "name": "font_family",
+        "type": "text"
+      },
+      {
+        "name": "overlay_opacity",
+        "type": "numeric"
+      },
+      {
+        "name": "active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "stage_groups",
+    "count": 135,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "stage_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "stage_standings",
+    "count": 1163,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "stage_id",
+        "type": "text"
+      },
+      {
+        "name": "group_id",
+        "type": "text"
+      },
+      {
+        "name": "entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "played",
+        "type": "numeric"
+      },
+      {
+        "name": "wins",
+        "type": "numeric"
+      },
+      {
+        "name": "draws",
+        "type": "numeric"
+      },
+      {
+        "name": "losses",
+        "type": "numeric"
+      },
+      {
+        "name": "score_for",
+        "type": "numeric"
+      },
+      {
+        "name": "score_against",
+        "type": "numeric"
+      },
+      {
+        "name": "score_diff",
+        "type": "numeric"
+      },
+      {
+        "name": "points",
+        "type": "numeric"
+      },
+      {
+        "name": "position",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "states",
+    "count": 2276,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "code",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "style_market_stats",
+    "count": 10,
+    "columns": [
+      {
+        "name": "style_key",
+        "type": "text"
+      },
+      {
+        "name": "max_supply",
+        "type": "numeric"
+      },
+      {
+        "name": "current_supply",
+        "type": "numeric"
+      },
+      {
+        "name": "floor_price",
+        "type": "numeric"
+      },
+      {
+        "name": "avg_recent_price",
+        "type": "numeric"
+      },
+      {
+        "name": "sales_30d",
+        "type": "numeric"
+      },
+      {
+        "name": "last_sale_price",
+        "type": "numeric"
+      },
+      {
+        "name": "last_sale_at",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "team_players",
+    "count": 4881,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "team_id",
+        "type": "text"
+      },
+      {
+        "name": "player_profile_id",
+        "type": "text"
+      },
+      {
+        "name": "role",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "team_selection_weights",
+    "count": 208,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "setting_id",
+        "type": "text"
+      },
+      {
+        "name": "stat_type",
+        "type": "text"
+      },
+      {
+        "name": "weight",
+        "type": "numeric"
+      }
+    ]
+  },
+  {
+    "table": "team_selections_results",
+    "count": 459,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "setting_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "round_label",
+        "type": "text"
+      },
+      {
+        "name": "period_start",
+        "type": "text"
+      },
+      {
+        "name": "period_end",
+        "type": "text"
+      },
+      {
+        "name": "formation_key",
+        "type": "text"
+      },
+      {
+        "name": "players",
+        "type": "jsonb"
+      },
+      {
+        "name": "image_url",
+        "type": "text"
+      },
+      {
+        "name": "is_published",
+        "type": "boolean"
+      },
+      {
+        "name": "generated_at",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "slot_custom_positions",
+        "type": "jsonb"
+      }
+    ]
+  },
+  {
+    "table": "team_selections_settings",
+    "count": 26,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "formation_key",
+        "type": "text"
+      },
+      {
+        "name": "start_date",
+        "type": "text"
+      },
+      {
+        "name": "end_date",
+        "type": "text"
+      },
+      {
+        "name": "min_matches",
+        "type": "numeric"
+      },
+      {
+        "name": "min_minutes",
+        "type": "numeric"
+      },
+      {
+        "name": "is_automatic",
+        "type": "boolean"
+      },
+      {
+        "name": "auto_frequency",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      },
+      {
+        "name": "slot_position_map",
+        "type": "jsonb"
+      },
+      {
+        "name": "slot_custom_positions",
+        "type": "jsonb"
+      },
+      {
+        "name": "card_width",
+        "type": "numeric"
+      },
+      {
+        "name": "card_height",
+        "type": "numeric"
+      },
+      {
+        "name": "pitch_bg_color",
+        "type": "text"
+      },
+      {
+        "name": "pitch_border_color",
+        "type": "text"
+      },
+      {
+        "name": "pitch_line_color",
+        "type": "text"
+      },
+      {
+        "name": "selection_card_fields_override",
+        "type": "jsonb"
+      },
+      {
+        "name": "pitch_image_url",
+        "type": "text"
+      },
+      {
+        "name": "show_pitch_lines",
+        "type": "boolean"
+      },
+      {
+        "name": "pitch_width",
+        "type": "numeric"
+      },
+      {
+        "name": "pitch_aspect_ratio",
+        "type": "text"
+      },
+      {
+        "name": "is_default",
+        "type": "boolean"
+      }
+    ]
+  },
+  {
+    "table": "team_templates",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "preview_image_key",
+        "type": "text"
+      },
+      {
+        "name": "plan_required",
+        "type": "text"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean"
+      },
+      {
+        "name": "featured",
+        "type": "boolean"
+      },
+      {
+        "name": "sort_order",
+        "type": "numeric"
+      },
+      {
+        "name": "is_premium",
+        "type": "boolean"
+      },
+      {
+        "name": "credit_price",
+        "type": "text"
+      },
+      {
+        "name": "is_exclusive_ultra",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "teams",
+    "count": 1188,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "owner_user_id",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "tag",
+        "type": "text"
+      },
+      {
+        "name": "emblem_object_key",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "tier_id",
+        "type": "text"
+      },
+      {
+        "name": "formation",
+        "type": "text"
+      },
+      {
+        "name": "clubsId",
+        "type": "numeric"
+      },
+      {
+        "name": "lineup_assignments",
+        "type": "jsonb"
+      },
+      {
+        "name": "eafc_club_name",
+        "type": "text"
+      },
+      {
+        "name": "eafc_club_platform",
+        "type": "text"
+      },
+      {
+        "name": "eafc_club_members",
+        "type": "jsonb"
+      }
+    ]
+  },
+  {
+    "table": "tiers",
+    "count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "key",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "rank",
+        "type": "numeric"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "default_trophy_object_key",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "tournament_allowed_tiers",
+    "count": 72,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "tier_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "tournament_messenger_config",
+    "count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_type",
+        "type": "text"
+      },
+      {
+        "name": "enabled",
+        "type": "boolean"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "tournament_stages",
+    "count": 60,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "tournament_id",
+        "type": "text"
+      },
+      {
+        "name": "stage_type",
+        "type": "text"
+      },
+      {
+        "name": "stage_order",
+        "type": "numeric"
+      },
+      {
+        "name": "best_of_default",
+        "type": "numeric"
+      },
+      {
+        "name": "result_mode",
+        "type": "text"
+      },
+      {
+        "name": "standings_mode",
+        "type": "text"
+      },
+      {
+        "name": "rules_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "tournaments",
+    "count": 34,
+    "columns": [
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "game_id",
+        "type": "text"
+      },
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "format",
+        "type": "text"
+      },
+      {
+        "name": "created_by_user_id",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "starts_at",
+        "type": "text"
+      },
+      {
+        "name": "scope",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "rules_overrides_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "is_easy_mode",
+        "type": "boolean"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "champion_entrant_id",
+        "type": "text"
+      },
+      {
+        "name": "ends_at",
+        "type": "text"
+      },
+      {
+        "name": "country_id",
+        "type": "text"
+      },
+      {
+        "name": "federation_id",
+        "type": "text"
+      },
+      {
+        "name": "registration_open_at",
+        "type": "text"
+      },
+      {
+        "name": "registration_close_at",
+        "type": "text"
+      },
+      {
+        "name": "entry_fee",
+        "type": "numeric"
+      },
+      {
+        "name": "is_free",
+        "type": "boolean"
+      },
+      {
+        "name": "prizes_json",
+        "type": "jsonb"
+      },
+      {
+        "name": "logo_object_key",
+        "type": "text"
+      },
+      {
+        "name": "watermark_opacity",
+        "type": "numeric"
+      },
+      {
+        "name": "watermark_scale",
+        "type": "numeric"
+      },
+      {
+        "name": "transfer_window_status",
+        "type": "text"
+      },
+      {
+        "name": "easy_league_id",
+        "type": "text"
+      },
+      {
+        "name": "participant_mode",
+        "type": "text"
+      },
+      {
+        "name": "is_featured_home",
+        "type": "boolean"
+      },
+      {
+        "name": "featured_until",
+        "type": "text"
+      },
+      {
+        "name": "featured_credits_charged",
+        "type": "numeric"
+      },
+      {
+        "name": "trophy_id",
+        "type": "text"
+      },
+      {
+        "name": "trophy_image_object_key",
+        "type": "text"
+      },
+      {
+        "name": "max_registrations",
+        "type": "numeric"
+      },
+      {
+        "name": "elo_ranking_enabled",
+        "type": "boolean"
+      },
+      {
+        "name": "max_teams_per_user",
+        "type": "numeric"
+      },
+      {
+        "name": "accept_card",
+        "type": "boolean"
+      },
+      {
+        "name": "accept_pix",
+        "type": "boolean"
+      },
+      {
+        "name": "is_special_edition",
+        "type": "boolean"
+      },
+      {
+        "name": "ranking_season_id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "user_ai_credits",
+    "count": 1,
+    "columns": [
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "balance",
+        "type": "numeric"
+      },
+      {
+        "name": "monthly_bonus",
+        "type": "numeric"
+      },
+      {
+        "name": "last_bonus_at",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "user_announcement_views",
+    "count": 1,
+    "columns": [
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "announcement_key",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "user_easy_leagues",
+    "count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "slug",
+        "type": "text"
+      },
+      {
+        "name": "logo_object_key",
+        "type": "text"
+      },
+      {
+        "name": "banner_object_key",
+        "type": "text"
+      },
+      {
+        "name": "theme_template",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "updated_at",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "user_roles",
+    "count": 1,
+    "columns": [
+      {
+        "name": "user_id",
+        "type": "text"
+      },
+      {
+        "name": "role_id",
+        "type": "text"
+      },
+      {
+        "name": "id",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "table": "users_profile",
+    "count": 1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "type": "text"
+      },
+      {
+        "name": "display_name",
+        "type": "text"
+      },
+      {
+        "name": "full_name",
+        "type": "text"
+      },
+      {
+        "name": "preferred_language",
+        "type": "text"
+      },
+      {
+        "name": "created_at",
+        "type": "text"
+      },
+      {
+        "name": "onboarding_completed",
+        "type": "boolean"
+      }
+    ]
+  }
+]

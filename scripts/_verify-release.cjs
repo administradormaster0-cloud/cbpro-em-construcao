@@ -1,0 +1,18 @@
+const fs = require("fs");
+const zlib = require("zlib");
+const html = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/index.html","utf8");
+const m = html.match(/src="([^"]+\.js)"/g);
+console.log("scripts", m);
+const cloud = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/fc-cloud.js","utf8");
+console.log("cloud bytes", cloud.length, "placeholder", cloud.includes("__SUPABASE"), "publicRead", cloud.includes("fc_public_select"));
+const ht = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/.htaccess","utf8");
+console.log(ht.split("\n").slice(-12).join("\n"));
+const entry = m.map(x=>x.match(/js\/([^"]+)/)[1]).find(n=>n.startsWith("index-"));
+const buf = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js/"+entry);
+console.log("entry", entry, "raw", buf.length, "gz", zlib.gzipSync(buf).length);
+const idx = fs.readdirSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js").filter(n=>n.startsWith("route-Index"));
+const ib = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js/"+idx[0]);
+console.log("home", idx[0], "raw", ib.length, "gz", zlib.gzipSync(ib).length);
+const rk = fs.readdirSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js").filter(n=>n.startsWith("route-RankedPublic"));
+const rb = fs.readFileSync("D:/FC CLUBS/fcclubs/data/hostinger-release/js/"+rk[0]);
+console.log("ranked", rk[0], "raw", rb.length, "gz", zlib.gzipSync(rb).length);

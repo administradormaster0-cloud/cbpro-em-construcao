@@ -1,0 +1,18 @@
+.cbpro-event{background:#f5f8fc;color:#081834;min-height:100vh;font-family:Barlow,sans-serif}
+.cbpro-event-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:32px;max-width:1480px;margin:auto;padding:24px}
+.cbpro-event-identity{grid-column:1/-1;min-width:0;background:#081834;color:#edf4ff;border-bottom:4px solid #22d875;padding:20px;border-radius:12px}
+.cbpro-event-identity>section{padding-top:0;border:0}
+.cbpro-event-identity>section>div{padding:0}
+.cbpro-event-summary{border-top:2px solid #1749bc;padding-top:20px;align-self:start;position:sticky;top:100px}
+#root .cbpro-event h1,#root .cbpro-event h2,#root .cbpro-event h3{font-family:Phudu,sans-serif;letter-spacing:-.02em}
+#root .cbpro-event-summary h2{font-size:25px;line-height:1.15;margin-bottom:20px}
+.cbpro-event-summary .summary-metrics-grid{display:grid;grid-template-columns:1fr 1fr;padding:0;gap:20px}
+.cbpro-event-summary section{border:0;background:none}
+.cbpro-event-content{min-width:0}
+.cbpro-event-content>section{padding:0 0 32px;max-width:none}
+.cbpro-event [role=tablist]{height:auto;display:flex;justify-content:flex-start;overflow:auto;gap:16px;padding:0;background:none;border-radius:0;border-bottom:1px solid #a8bfd8}
+.cbpro-event [role=tab]{min-height:48px;padding:14px 8px;font-size:15px;border-radius:0;white-space:nowrap}
+.cbpro-event [role=tab][data-state=active]{background:none;border-bottom:3px solid #1ac776;color:#1749bc;box-shadow:none}
+.cbpro-event button:focus-visible,.cbpro-event a:focus-visible{outline:3px solid #17bc69;outline-offset:3px}
+html[data-cbpro-theme=dark] .cbpro-event{background:#101f35;color:#edf4ff}
+@media(max-width:800px){.cbpro-event-layout{grid-template-columns:minmax(0,1fr);padding:16px;gap:28px}.cbpro-event-summary{position:static;min-width:0}.cbpro-event-identity{padding:16px}.cbpro-event-summary .summary-metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cbpro-event-identity h1{overflow-wrap:anywhere;font-size:28px}.cbpro-event-identity [class*=flex-wrap]{gap:8px}.cbpro-event-identity button{white-space:normal}}

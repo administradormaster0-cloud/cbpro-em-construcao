@@ -1,0 +1,105 @@
+#cbpro-program{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,1fr);gap:0;aspect-ratio:auto!important;background:#f5f7fa;color:#081834;overflow:visible}
+#cbpro-program::before,#cbpro-program::after,#program-semantic-layer{display:none!important}
+#cbpro-program>.program-plate,#cbpro-program>.program-semantic{display:none}
+#cbpro-program .program-mobile-group{position:relative;box-sizing:border-box;min-width:0}
+#cbpro-program .program-mobile-group .program-semantic,#cbpro-program .program-mobile-group .program-plate{position:relative;left:auto!important;top:auto!important;width:auto!important;height:auto!important;font-size:16px;line-height:1.45}
+#cbpro-program .program-mobile-header{grid-column:1/-1;display:flex;align-items:center;gap:28px;padding:24px 4%;background:#fff;color:#102444;border-bottom:1px solid #d6e0ec}
+#cbpro-program .program-mobile-header .program-plate--brand{width:230px!important;height:62px!important;object-fit:contain;margin-right:auto}
+#cbpro-program .program-semantic--navigation-links{order:1;gap:32px;color:#102444;font-weight:600;display:flex}
+#cbpro-program .program-semantic--theme-toggle{order:2;color:#102444;background:#f0f4f9;padding:10px 14px;min-height:44px}
+#cbpro-program .program-semantic--account{order:3;padding:12px 22px;color:#fff;min-height:44px}
+#cbpro-program .program-mobile-hero{padding:52px 7% 44px;min-height:500px;background:#081834;color:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#cbpro-program .program-mobile-hero .program-plate--hero-background{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover}
+#cbpro-program .program-mobile-hero .program-plate--hero-trophy{position:absolute;right:2%;top:9%!important;width:41%!important;height:82%!important;object-fit:contain}
+#cbpro-program .program-mobile-hero .program-semantic{z-index:1;max-width:55%;margin:4px 0}
+#cbpro-program .program-mobile-hero [class*='program-semantic--title-']{font:750 clamp(30px,3.8vw,64px)/1.03 Phudu,sans-serif;white-space:normal;letter-spacing:-.025em}
+#cbpro-program .program-mobile-hero .program-semantic--game-label{margin-bottom:20px;color:#e5eeff}
+#cbpro-program .program-mobile-hero .program-semantic--hero-action{padding:14px 24px;margin-top:22px;min-height:48px}
+#cbpro-program .program-mobile-schedule{background:#081834;color:#fff;padding:44px 9%;display:flex;flex-direction:column;gap:14px}
+#cbpro-program .program-mobile-schedule h2{font:600 28px Phudu,sans-serif}
+#cbpro-program .program-semantic--schedule-tabs{display:flex;gap:14px;min-height:44px;font-size:14px!important}
+#cbpro-program [class*='program-semantic--schedule-row-']{padding:12px 0;min-height:54px;gap:4px}
+#cbpro-program [class*='program-semantic--schedule-row-']:empty{display:none}
+#cbpro-program .program-news-desk{padding:42px 7%;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+#cbpro-program .program-mobile-news-intro{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:18px;padding:0}
+#cbpro-program .program-mobile-news-intro h2{width:100%!important;font:650 42px/1.05 Phudu,sans-serif;letter-spacing:-.02em}
+#cbpro-program .program-mobile-news-intro p{width:100%!important;max-width:60ch;color:#344f73}
+#cbpro-program .program-mobile-news-intro a{color:#124aa5;font-weight:600}
+#cbpro-program .program-mobile-article{padding:0;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+#cbpro-program .program-mobile-article:first-of-type{grid-row:span 2}
+#cbpro-program .program-mobile-article .program-plate{width:100%!important;height:180px!important;object-fit:cover}
+#cbpro-program .program-mobile-article .program-semantic{color:#102444;margin:0}
+#cbpro-program .program-mobile-article h3{font:600 24px/1.18 Phudu,sans-serif;display:block;-webkit-line-clamp:unset;overflow:visible}
+#cbpro-program .program-mobile-article a{font-weight:600;color:#124aa5;min-height:44px;display:flex;align-items:center}
+#cbpro-program .program-standings-desk{padding:42px 9%;display:flex;flex-direction:column;gap:14px;border-left:1px solid #d6e0ec}
+#cbpro-program .program-mobile-ranking,#cbpro-program .program-mobile-champions{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0}
+#cbpro-program .program-standings-desk h2{font:600 26px Phudu,sans-serif;white-space:normal}
+#cbpro-program .program-mobile-rank{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #d6e0ec}
+#cbpro-program .program-mobile-rank .program-plate{width:50px!important;height:50px!important;object-fit:contain}
+#cbpro-program .program-mobile-rank [class*='rank-elo-']{margin-left:auto;font-weight:700}
+#cbpro-program .program-mobile-champions{margin-top:24px}
+#cbpro-program .program-mobile-champions .program-plate{width:28px!important;height:28px!important}
+#cbpro-program .program-mobile-champion{display:grid;grid-template-columns:72px 1fr;gap:8px 18px;align-items:center;padding:10px 0}
+#cbpro-program .program-mobile-champion .program-plate{grid-row:span 2;width:72px!important;height:90px!important;object-fit:contain}
+#cbpro-program .program-mobile-champion a{font-weight:600;justify-content:flex-start;text-align:left}
+html.program-dark #cbpro-program{background:#10223b;color:#edf4ff}
+html.program-dark #cbpro-program .program-mobile-article .program-semantic,html.program-dark #cbpro-program .program-mobile-news-intro p{color:#edf4ff}
+html.program-dark #cbpro-program .program-mobile-article a,html.program-dark #cbpro-program .program-mobile-news-intro a{color:#9ec6ff}
+@media(max-width:1000px){#cbpro-program .program-mobile-header{flex-wrap:wrap;gap:14px}#cbpro-program .program-semantic--navigation-links{order:4;width:100%!important;justify-content:space-between;gap:12px}}
+@media(max-width:760px){#cbpro-program{display:block}#cbpro-program .program-mobile-header .program-plate--brand{width:180px!important}#cbpro-program .program-mobile-hero{min-height:420px;padding:32px 20px}#cbpro-program .program-mobile-hero [class*='program-semantic--title-']{font-size:38px}#cbpro-program .program-news-desk{display:block;padding:32px 20px}#cbpro-program .program-mobile-news-intro{margin-bottom:28px}#cbpro-program .program-mobile-article{margin-bottom:28px}#cbpro-program .program-mobile-schedule,#cbpro-program .program-standings-desk{padding:28px 20px}#cbpro-program .program-mobile-header .program-semantic--navigation-links{font-size:13px;overflow:auto}#cbpro-program .program-standings-desk{border-left:0}}
+#cbpro-program .program-mobile-group .program-semantic--news-heading{font:650 42px/1.05 Phudu,sans-serif;width:100%!important}
+#cbpro-program .program-mobile-group .program-semantic--news-intro{width:100%!important}
+#cbpro-program .program-mobile-group .program-semantic--schedule-heading{font:600 28px Phudu,sans-serif}
+#cbpro-program .program-mobile-group [class*='program-semantic--title-']{font:750 clamp(30px,3.8vw,64px)/1.03 Phudu,sans-serif}
+#cbpro-program .program-mobile-group .program-semantic--ranking-title,#cbpro-program .program-mobile-group .program-semantic--champions-heading{font:600 26px Phudu,sans-serif}
+
+/* CBPRO home: championship masthead and editorial hierarchy. */
+#cbpro-program{--home-ink:#081834;--home-blue:#124aa6;--home-green:#0dd878;--home-rule:#d6e0ec;grid-template-columns:minmax(0,2fr) minmax(310px,1fr)}
+#cbpro-program ::selection{background:#0dd878;color:#081834}
+#cbpro-program a,#cbpro-program button{transition:background-color .18s ease,color .18s ease,transform .18s ease;text-underline-offset:5px}
+#cbpro-program a:focus-visible,#cbpro-program button:focus-visible{outline:3px solid #0dd878;outline-offset:5px}
+#cbpro-program .program-mobile-header{padding:18px 4%;gap:24px}
+#cbpro-program .program-mobile-header .program-plate--brand{width:216px!important;height:60px!important}
+#cbpro-program .program-mobile-hero{min-height:590px;padding:56px 7% 52px}
+#cbpro-program .program-mobile-hero .program-plate--hero-trophy{right:0;top:7%!important;width:46%!important;height:88%!important;filter:drop-shadow(0 20px 24px rgba(0,0,0,.3));animation:cbpro-trophy-reveal .8s cubic-bezier(.16,1,.3,1) both}
+#cbpro-program .program-mobile-hero [class*='program-semantic--title-']{font-size:clamp(38px,4.8vw,78px);font-weight:800;line-height:1.01;letter-spacing:-.025em;max-width:56%}
+#cbpro-program .program-mobile-hero .program-semantic--game-label{margin-bottom:18px;font-weight:600}
+#cbpro-program .program-mobile-hero .program-semantic--registration-state{margin-top:24px;color:#fff;font-weight:600}
+#cbpro-program .program-mobile-hero .program-semantic--start-label{display:inline-block;margin-top:10px;color:#c2dafc}
+#cbpro-program .program-mobile-hero .program-semantic--start-date{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+#cbpro-program .program-mobile-hero .program-semantic--hero-action{min-width:192px;min-height:52px;font-weight:700;border-radius:6px;margin-top:26px}
+#cbpro-program .program-mobile-hero .program-semantic--hero-action:hover{background:#66eda9;transform:translateY(-2px)}
+#cbpro-program .program-mobile-schedule{padding:50px 9%;background:#081834}
+#cbpro-program .program-mobile-group .program-semantic--schedule-heading{font-size:36px;line-height:1.1;margin-bottom:8px}
+#cbpro-program .program-semantic--schedule-tabs{gap:18px}
+#cbpro-program [class*='program-semantic--schedule-row-']{padding:20px 0;gap:8px;line-height:1.3;border-bottom:1px solid #274362}
+#cbpro-program [class*='program-semantic--schedule-row-']:hover{color:#60e7a0}
+#cbpro-program .program-semantic--schedule-more{margin-top:10px;min-height:44px;display:flex;align-items:center;color:#aacbff}
+#cbpro-program .program-news-desk{padding:54px 7%;gap:28px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-content:start}
+#cbpro-program .program-mobile-news-intro{gap:14px;margin-bottom:8px}
+#cbpro-program .program-mobile-group .program-semantic--news-heading{font-size:54px;line-height:1.03;max-width:650px;margin:0 0 10px}
+#cbpro-program .program-mobile-news-intro p{max-width:58ch}
+#cbpro-program .program-mobile-news-intro a{min-height:44px;display:inline-flex;align-items:center}
+#cbpro-program .program-mobile-article:first-of-type{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);column-gap:26px;align-content:start}
+#cbpro-program .program-mobile-article:first-of-type .program-plate{grid-column:1;grid-row:1/5;height:320px!important;border-radius:8px}
+#cbpro-program .program-mobile-article:first-of-type .program-semantic{grid-column:2;max-height:none}
+#cbpro-program .program-mobile-group .program-mobile-article h3,#cbpro-program .program-mobile-article .program-semantic--news-main-title{font:700 30px/1.15 Phudu,sans-serif;letter-spacing:-.02em}
+#cbpro-program .program-mobile-article .program-plate{height:208px!important;border-radius:8px}
+#cbpro-program .program-mobile-article [class*='news-meta']{font-size:14px!important;color:#3d5879}
+#cbpro-program .program-standings-desk{padding:54px 9%;gap:12px;background:#eaf0f7}
+#cbpro-program .program-mobile-group .program-semantic--ranking-title,#cbpro-program .program-mobile-group .program-semantic--champions-heading{font-size:30px}
+#cbpro-program .program-mobile-rank{padding:20px 0;gap:16px;font-variant-numeric:tabular-nums}
+#cbpro-program .program-mobile-rank [class*='rank-number-']{font:700 28px Phudu,sans-serif;color:#37537c;min-width:22px}
+#cbpro-program .program-mobile-rank [class*='rank-name-']{font-weight:700}
+#cbpro-program .program-mobile-rank [class*='rank-elo-']{font:700 26px Phudu,sans-serif;color:#124aa6}
+#cbpro-program .program-mobile-rank .program-plate{width:62px!important;height:62px!important}
+#cbpro-program .program-mobile-champions{margin-top:34px;padding-top:18px}
+#cbpro-program .program-mobile-champion{padding:16px 0;border-bottom:1px solid #c6d4e6;grid-template-columns:84px 1fr}
+#cbpro-program .program-mobile-champion .program-plate{width:84px!important;height:100px!important}
+html.program-dark #cbpro-program .program-standings-desk{background:#0e1c30;border-color:#294361}
+html.program-dark #cbpro-program .program-mobile-rank,html.program-dark #cbpro-program .program-mobile-champion{border-color:#294361}
+html.program-dark #cbpro-program .program-mobile-rank [class*='rank-number-'],html.program-dark #cbpro-program .program-mobile-rank [class*='rank-elo-']{color:#9ec6ff}
+@keyframes cbpro-trophy-reveal{from{transform:translateY(20px) scale(.97)}to{transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){#cbpro-program .program-mobile-hero .program-plate--hero-trophy{animation:none}#cbpro-program a,#cbpro-program button{transition:none}}
+@media(max-width:1100px){#cbpro-program .program-mobile-hero{min-height:540px}#cbpro-program .program-mobile-hero [class*='program-semantic--title-']{font-size:clamp(38px,5vw,66px)}#cbpro-program .program-mobile-article:first-of-type{display:flex}#cbpro-program .program-mobile-article:first-of-type .program-plate{height:260px!important}}
+@media(max-width:760px){#cbpro-program{display:block}#cbpro-program .program-mobile-header{padding:16px 20px;gap:12px}#cbpro-program .program-mobile-header .program-plate--brand{width:168px!important;height:48px!important}#cbpro-program .program-mobile-hero{min-height:510px;padding:36px 20px}#cbpro-program .program-mobile-hero [class*='program-semantic--title-']{font-size:42px;max-width:60%}#cbpro-program .program-mobile-hero .program-plate--hero-trophy{right:-9%;top:15%!important;width:53%!important;height:68%!important}#cbpro-program .program-mobile-hero .program-semantic--hero-action{min-width:168px;padding:14px 16px}#cbpro-program .program-mobile-schedule,#cbpro-program .program-news-desk,#cbpro-program .program-standings-desk{padding:32px 20px}#cbpro-program .program-mobile-group .program-semantic--news-heading{font-size:42px}#cbpro-program .program-mobile-article:first-of-type .program-plate{height:230px!important}#cbpro-program .program-mobile-article .program-plate{height:210px!important}#cbpro-program .program-mobile-article .program-semantic--news-main-title{font-size:28px}#cbpro-program .program-mobile-article{margin-bottom:32px}#cbpro-program .program-mobile-group .program-semantic--ranking-title,#cbpro-program .program-mobile-group .program-semantic--champions-heading{font-size:27px}}

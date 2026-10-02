@@ -1,0 +1,4 @@
+import {resolvePlayerIds$1,TIER_PRIORITY$2} from "./shared-a379d860fa.js";
+const {reactExports,supabase} = globalThis;
+function useEntityPlans(i,o,et){const[st,at]=reactExports.useState({});return reactExports.useEffect(()=>{if(i.length===0)return;(async()=>{let Ct=i,Tt={};if(o==="player"){const Ht=await resolvePlayerIds$1(i);Ct=Ht.allSearchIds,Tt=Ht.reverseMap}let Lt=supabase.from("subscriptions").select("entity_id, plans(tier)").eq("entity_type",o).eq("status","active").in("entity_id",Ct);const{data:$t}=await Lt,qt={};($t||[]).forEach(Ht=>{var Kt;const Gt=(Kt=Ht.plans)==null?void 0:Kt.tier;if(Gt&&Gt!=="free"){const tr=o==="player"&&Tt[Ht.entity_id]||Ht.entity_id,rr=qt[tr];if((!rr||(TIER_PRIORITY$2[Gt]??0)>(TIER_PRIORITY$2[rr]??0))&&(qt[tr]=Gt),i.includes(Ht.entity_id)){const nr=qt[Ht.entity_id];(!nr||(TIER_PRIORITY$2[Gt]??0)>(TIER_PRIORITY$2[nr]??0))&&(qt[Ht.entity_id]=Gt)}}}),at(qt)})()},[i.join(","),o,et]),st}
+export {useEntityPlans};

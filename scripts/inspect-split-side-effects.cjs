@@ -1,0 +1,1 @@
+const fs=require('fs'),ts=require('typescript');const source=fs.readFileSync('data/cbpro-release/js/cbpro-app-36daf9df6bc4.r20261001b.js','utf8'),ast=ts.createSourceFile('x',source,ts.ScriptTarget.Latest,true,ts.ScriptKind.JS);for(const n of ast.statements)if(ts.isExpressionStatement(n))console.log(n.getText(ast).slice(0,200));

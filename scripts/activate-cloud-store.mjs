@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {createCloudStore} from '../server/cloud-store.mjs';
+import {db} from '../server/db.mjs';
+const path=fileURLToPath(new URL('../.env.supabase.local',import.meta.url));
+process.loadEnvFile(path);
+console.log('Checking cloud runtime and synchronizing working cache...');
+const store=createCloudStore({url:process.env.SUPABASE_URL,key:process.env.SUPABASE_SERVICE_ROLE_KEY});
+await store.initialize();
+console.log(store.status());
+const env=readFileSync(path,'utf8').replace(/^FC_CLOUD_STORE=.*\r?\n?/m,'');
+writeFileSync(path,env.trimEnd()+'\nFC_CLOUD_STORE=true\n');
+db.close();

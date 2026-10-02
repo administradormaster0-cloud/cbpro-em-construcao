@@ -1,0 +1,1 @@
+const fs=require('fs');const dir='data/cbpro-reconstruction/js';for(const f of fs.readdirSync(dir).filter(f=>/AvatarGallery|MyCollection|Marketplace/.test(f))){const s=fs.readFileSync(dir+'/'+f,'utf8');for(const n of ['accept-offer','buy-avatar-nft']){let i=s.indexOf('"'+n+'"');if(i<0)i=s.indexOf("'"+n+"'");if(i>=0)console.log(f+' '+s.slice(Math.max(0,i-550),i+1200));}}
