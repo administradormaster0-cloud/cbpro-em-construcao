@@ -1,0 +1,1 @@
+function generateClassificationSeeding(i){if(i<=1)return[1];if(i===2)return[1,2];const o=i,et=o/2,st=[1];for(let Tt=4;Tt<=et;Tt+=2)st.push(Tt);const at=[];for(let Tt=et-1;Tt>=3;Tt-=2)at.push(Tt);at.push(2);const vt=[...st,...at],Ct=[];for(const Tt of vt)Ct.push(Tt),Ct.push(o+1-Tt);return Ct}
